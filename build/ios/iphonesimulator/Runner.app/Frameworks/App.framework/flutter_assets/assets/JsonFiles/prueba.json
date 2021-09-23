@@ -1,0 +1,18 @@
+[
+  {
+    "id":0,
+    "departamento": "Cundinamarca",
+    "ciudades": [
+      "Bogotá",
+      "Fusa"
+    ]
+  },
+  {
+    "id":1,
+    "departamento": "Arauca",
+    "ciudades": [
+      "no se",
+      "no se2"
+    ]
+  }
+]

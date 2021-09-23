@@ -1,0 +1,216 @@
+name: acin
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+# Firebase dependencies are from Nov 6th 2020. Date is so important to find the right compatibility between these packages
+  firebase: ^9.0.0
+
+  firebase_core: ^1.0.1
+
+  firebase_auth: ^1.0.1
+
+  firebase_analytics: ^7.1.1
+
+  cloud_firestore: ^1.0.1
+
+  shared_preferences: ^0.5.3+4
+
+  flutter_bloc: ^6.1.3
+
+  provider: ^4.3.3
+
+  connectivity: ^3.0.2
+
+  intl: ^0.17.0
+
+  url_launcher: ^6.0.3
+
+  #flutter_native_splash: ^0.2.8
+
+  flutter_launcher_icons: ^0.9.2
+  #flutter_launcher_name: ^0.0.1
+
+flutter_launcher_name:
+  name: "PROA UNAL"
+
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  matrix_gesture_detector: ^0.1.0
+
+flutter_icons:
+  image_path: "assets/logoApp.png"
+  android: true
+  ios: true
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/splashS.png"
+  android: true
+  ios: true
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  assets:
+    - assets/unalLogo.png
+    - assets/splashS.png
+    - assets/unalLogoWhite.png
+    - assets/home.png
+    - assets/volver.png
+    - assets/ExpandIcon.png
+    - assets/unalLogoBlack.png
+    - assets/unalLogoWhiteGreen.png
+    - assets/i1.png
+    - assets/i2.png
+    - assets/i3.png
+    - assets/i4.png
+    - assets/i5.png
+    - assets/m1.png
+    - assets/m2.png
+    - assets/m3.png
+    - assets/m4.png
+    - assets/m5.png
+    - assets/EncabezadoMenu.png
+    - assets/logoApp.png
+    - assets/b1.png
+    - assets/b2.png
+    - assets/b3.png
+    - assets/b4.png
+    - assets/b5.png
+    - assets/NeumoniaAdquiridaEnComunidad/titulo.png
+    - assets/NeumoniaAdquiridaEnComunidad/diagnostico.png
+    - assets/NeumoniaAdquiridaEnComunidad/tratamiento.png
+    - assets/NeumoniaAdquiridaEnComunidad/tinticionDiagnosticoTabla1.png
+    - assets/NeumoniaAdquiridaEnComunidad/PSIB.png
+    - assets/NeumoniaAdquiridaEnComunidad/CURB65B.png
+    - assets/NeumoniaAdquiridaEnComunidad/CRB65B.png
+    - assets/NeumoniaAdquiridaEnComunidad/CRB65NACTratamiento.png
+    - assets/NeumoniaAdquiridaEnComunidad/CURB65BTablaNACTratamiento.png
+    - assets/NeumoniaAdquiridaEnComunidad/PSITablaNACTratamiento.png
+    - assets/NeumoniaAdquiridaEnComunidad/NACleveTratamientoTabla.png
+    - assets/NeumoniaAdquiridaEnComunidad/tablaNACModeradoSinRiesgo.png
+    - assets/NeumoniaAdquiridaEnComunidad/tablaNACModeradoConRiesgo.png
+    - assets/NeumoniaAdquiridaEnComunidad/tablaNACGraveSinRiesgo.png
+    - assets/NeumoniaAdquiridaEnComunidad/tablaNACGraveConRiesgo.png
+
+    - assets/ProfilaxisQuirurgica/ProfilaxisQuirurgica_titulo.png
+    - assets/ProfilaxisQuirurgica/ProfilaxisQuirurgica_b1.png
+    - assets/ProfilaxisQuirurgica/ProfilaxisQuirurgica_b2.png
+    - assets/ProfilaxisQuirurgica/ProfilaxisQuirurgica_b3.png
+    - assets/ProfilaxisQuirurgica/ProfilaxisQuirurgica_b4.png
+    - assets/ProfilaxisQuirurgica/tabla1RiesgoISQProfilaxisQ.png
+    - assets/ProfilaxisQuirurgica/preoperatoriaTabla1.png
+    - assets/ProfilaxisQuirurgica/preoperatoriaTabla3.png
+    - assets/ProfilaxisQuirurgica/tablaIntraoperatoria.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT1.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT2.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT3.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT4.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT5.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT6.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT7.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT8.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT9.png
+    - assets/ProfilaxisQuirurgica/preoperatorioT10.png
+    - assets/ProfilaxisQuirurgica/preoperatorioRef.png
+
+    - assets/InfeccionTractoUrinario/tractoUrinatioTitulo.png
+    - assets/InfeccionTractoUrinario/tractoUrinario_b1.png
+    - assets/InfeccionTractoUrinario/tractoUrinario_b2.png
+    - assets/InfeccionTractoUrinario/urinarioTabla1.png
+    - assets/InfeccionTractoUrinario/urinarioTabla2.png
+
+    - assets/InfeccionPielTejidosBlandos/tejidosTitulo.png
+    - assets/InfeccionPielTejidosBlandos/tejidos_b1.png
+    - assets/InfeccionPielTejidosBlandos/tejidos_b2.png
+    - assets/InfeccionPielTejidosBlandos/tejidos_b3.png
+    - assets/InfeccionPielTejidosBlandos/tejidosTabla1.png
+    - assets/InfeccionPielTejidosBlandos/tejidosTabla2.png
+    - assets/InfeccionPielTejidosBlandos/tejidosTabla3.png
+    - assets/InfeccionPielTejidosBlandos/tejidosTabla4.png
+    - assets/InfeccionPielTejidosBlandos/tejidosTabla5.png
+
+    - assets/InfeccionIntraabdominal/intraabdominalTitulo.png
+    - assets/InfeccionIntraabdominal/intraabdominal_b1.png
+    - assets/InfeccionIntraabdominal/intraabdominal_b2.png
+    - assets/InfeccionIntraabdominal/intraabdominal_b3.png
+    - assets/InfeccionIntraabdominal/intraabdominal_Tabla1.png
+
+
+  fonts:
+    - family: Ancizar
+      fonts:
+        - asset: assets/Fonts/Ancizar-Sans-Regular.otf
+        - asset: assets/Fonts/Ancizar-Sans-Regular-Italic.otf
+          style: italic
+        - asset: assets/Fonts/Ancizar-Sans-Bold.otf
+          weight: 700
+        - asset: assets/Fonts/Ancizar-Sans-Bold-Italic.otf
+          weight: 700
+          style: italic
+
+
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

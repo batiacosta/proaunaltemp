@@ -1,0 +1,19 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-1.0.1/
+cloud_firestore_web=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-1.0.1/
+connectivity=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-3.0.2/
+connectivity_macos=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_macos-0.2.0/
+firebase_analytics=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_analytics-7.1.1/
+firebase_analytics_web=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_analytics_web-0.2.0+1/
+firebase_auth=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-1.0.1/
+firebase_auth_web=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-1.0.2/
+firebase_core=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.0.1/
+firebase_core_web=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.0.1/
+shared_preferences=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.7+3/
+shared_preferences_macos=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11/
+shared_preferences_web=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7/
+url_launcher=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.3/
+url_launcher_linux=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-2.0.0/
+url_launcher_macos=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-2.0.0/
+url_launcher_web=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.0/
+url_launcher_windows=/Users/david/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-2.0.0/

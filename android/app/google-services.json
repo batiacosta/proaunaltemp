@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "82045505624",
+    "project_id": "antimicrobianosapp-670c5",
+    "storage_bucket": "antimicrobianosapp-670c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82045505624:android:96bd76853cef5905d77a2d",
+        "android_client_info": {
+          "package_name": "com.graziles.proaunal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82045505624-19fjvmu0qbor592u94nbsmjb3ru41vc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg-WPjloyXqZXvtZZTef9UaFAXYiDK4ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82045505624-19fjvmu0qbor592u94nbsmjb3ru41vc0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "82045505624-1o2uh15pof6rbqm2h6c7fbh28dq01p62.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.graziles.antimicrobianosApp.antimicrobianosApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
