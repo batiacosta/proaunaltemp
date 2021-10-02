@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:82045505624:android:96bd76853cef5905d77a2d",
+        "mobilesdk_app_id": "1:82045505624:android:959716da304f5a41d77a2d",
         "android_client_info": {
-          "package_name": "com.graziles.proaunal"
+          "package_name": "co.edu.unal.proaunal"
         }
       },
       "oauth_client": [

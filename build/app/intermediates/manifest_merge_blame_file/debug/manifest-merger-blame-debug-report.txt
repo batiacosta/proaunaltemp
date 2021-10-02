@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.graziles.proaunal"
+3    package="co.edu.unal.proaunal"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -39,8 +39,8 @@
 28        android:debuggable="true"
 29        android:icon="@mipmap/ic_launcher"
 29-->/Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:11:9-43
-30        android:label="acin" >
-30-->/Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:10:9-29
+30        android:label="PROA UNAL" >
+30-->/Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:10:9-34
 31        <activity
 31-->/Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:12:9-23:20
 32            android:name="com.graziles.acin.MainActivity"
@@ -248,7 +248,7 @@
 141-->[com.google.firebase:firebase-common:19.5.0] /Users/david/.gradle/caches/transforms-2/files-2.1/d357528d736bea0899a78f18daa0c9f5/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
 142            android:name="com.google.firebase.provider.FirebaseInitProvider"
 142-->[com.google.firebase:firebase-common:19.5.0] /Users/david/.gradle/caches/transforms-2/files-2.1/d357528d736bea0899a78f18daa0c9f5/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
-143            android:authorities="com.graziles.proaunal.firebaseinitprovider"
+143            android:authorities="co.edu.unal.proaunal.firebaseinitprovider"
 143-->[com.google.firebase:firebase-common:19.5.0] /Users/david/.gradle/caches/transforms-2/files-2.1/d357528d736bea0899a78f18daa0c9f5/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
 144            android:directBootAware="true"
 144-->[com.google.firebase:firebase-common:19.5.0] /Users/david/.gradle/caches/transforms-2/files-2.1/d357528d736bea0899a78f18daa0c9f5/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43

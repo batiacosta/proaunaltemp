@@ -187,7 +187,7 @@ class _BibliografiaState extends State<Bibliografia> {
     return new StreamBuilder(
       stream: contenidos.doc("Bibliografia").snapshots(),
         builder: (context, snapshot){
-        if(!snapshot.hasData) return const Text('Cargando ...');
+        if(!snapshot.hasData) return offlineContenido(context);
         //print(snapshot.data['parrafos'][0]);
         return Column(
           children: new List.generate(snapshot.data['parrafos'].length, (index) => bibliografiaContent(context, snapshot.data['parrafos'][index])),

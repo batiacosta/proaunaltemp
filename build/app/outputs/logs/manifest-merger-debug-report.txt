@@ -127,7 +127,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/davi
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/david/.gradle/caches/transforms-2/files-2.1/c2d1e4e0f2ed3ef9e5c3fd020d26d332/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:10:9-29
+		ADDED from /Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:10:9-34
 	android:icon
 		ADDED from /Users/david/Documents/Graziles/ACIN/Antimicrobianos/proaunal/TemporalProaunal/proaunaltemp/android/app/src/main/AndroidManifest.xml:11:9-43
 	android:name
