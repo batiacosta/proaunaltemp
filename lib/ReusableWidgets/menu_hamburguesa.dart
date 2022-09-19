@@ -90,7 +90,7 @@ class _MenuDesplegadoState extends State<MenuDesplegado> {
         );
         break;
       case 2:
-        _launchURL();
+        _launchURL('mailto:antimicrobianos.app@gmail.com');
         break;
       case 3:
         Navigator.pushAndRemoveUntil(
@@ -106,11 +106,10 @@ class _MenuDesplegadoState extends State<MenuDesplegado> {
 
     }
   }
-  void _launchURL() async {
-    // ios specification
-    String urlMia = 'mailto:antimicrobianos.app@gmail.com';
-    if(await canLaunch(urlMia)){
-      await launch(urlMia);
+  void _launchURL(String urlMia) async {
+    Uri uri = new Uri(path: urlMia,);
+    if(await canLaunchUrl(uri)){
+      await launchUrl(uri);
     }
   }
   void _launchURL2() async {

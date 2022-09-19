@@ -10,7 +10,11 @@
 		</data>
 		<key>Headers/GDTCORConsoleLogger.h</key>
 		<data>
-		uiGrugM18w6jcKhynrsxsOgGOyA=
+		5tNgiWX/xiU2swa4Af3bK23iwm0=
+		</data>
+		<key>Headers/GDTCOREndpoints.h</key>
+		<data>
+		5R3RBi2CXt2Vnl/f5TbeUPxrHMM=
 		</data>
 		<key>Headers/GDTCOREvent.h</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/GDTCOREventTransformer.h</key>
 		<data>
-		1rrLonJHF3GgbUFpegWWCokndso=
+		tsQzP2WITwX2qWxqDS0Up4o9dsc=
 		</data>
 		<key>Headers/GDTCORTargets.h</key>
 		<data>
@@ -34,15 +38,15 @@
 		</data>
 		<key>Headers/GoogleDataTransport-umbrella.h</key>
 		<data>
-		EJ3Jqtj/cIWTGkF6q3Hwz4og5qY=
+		movmiBOMTbW1TFBjwXYlw3PY/Z8=
 		</data>
 		<key>Headers/GoogleDataTransport.h</key>
 		<data>
-		eyFUfLxFS5s1ge4AoHkHyWzTi98=
+		wgGDbrVHTQaYcmGEc64GmasHDVA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B7gH/rVOoU2TwjA3fbzPsO+6B+s=
+		Hhmm1rNCMQ8xbHpFz0paKlJEuuA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,10 +57,6 @@
 	<dict>
 		<key>Headers/GDTCORClock.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sG7akfwMxggtOPYkuBxhbh+65R8=
-			</data>
 			<key>hash2</key>
 			<data>
 			lx/hxUkZt3ZDN/2YP9J5pUop4/mY6bf/tVj9xne+dJ0=
@@ -64,21 +64,20 @@
 		</dict>
 		<key>Headers/GDTCORConsoleLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uiGrugM18w6jcKhynrsxsOgGOyA=
-			</data>
 			<key>hash2</key>
 			<data>
-			Z2n6AV8EVfZIdPeF8vcZjV8/Mxhy6YeEslxXBcmmyf4=
+			ssKoNg/ccbyAO0kqq4cUeJ8107WEcyrdtYFaXn3yEus=
+			</data>
+		</dict>
+		<key>Headers/GDTCOREndpoints.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y9LRys8ZN91npfXwSeRe1S/u4oecWwuVcz8pSscFhGs=
 			</data>
 		</dict>
 		<key>Headers/GDTCOREvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			74bI+hfvOqrVXOnOsXT2ZgNgoU8=
-			</data>
 			<key>hash2</key>
 			<data>
 			NiwpMxc5Vg7sggK6yDTzC5VafAKKQKOSlG6VJPCdfgA=
@@ -86,10 +85,6 @@
 		</dict>
 		<key>Headers/GDTCOREventDataObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sQLFncr+5wJyRtrxRWbLjqPCFLw=
-			</data>
 			<key>hash2</key>
 			<data>
 			0KitKPy/jmxA/wwV/oInKPbDOss1xYrSuUNMV7bCRNA=
@@ -97,21 +92,13 @@
 		</dict>
 		<key>Headers/GDTCOREventTransformer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1rrLonJHF3GgbUFpegWWCokndso=
-			</data>
 			<key>hash2</key>
 			<data>
-			VdbKh12dQWncGhKcIkxzIHl921RpsPGtJG7RYjQ+riI=
+			FMek5nZ3soQdr7qoap5WuzUgzf5AQGrckQ2x3X3885g=
 			</data>
 		</dict>
 		<key>Headers/GDTCORTargets.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Y/B7J3zmBLT57u7M/Q1wur2FHPQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			PaTryOPdmnTfKxuYnAxGd/ukYnw+1MlVgyhEnDCBOq4=
@@ -119,10 +106,6 @@
 		</dict>
 		<key>Headers/GDTCORTransport.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cEY4cbmarwn5AOSM2b67qlrb41M=
-			</data>
 			<key>hash2</key>
 			<data>
 			ouF//Qfe6Tr6y3eUp6hk+xlLk7fnepu7EvgaKBYe/sY=
@@ -130,32 +113,20 @@
 		</dict>
 		<key>Headers/GoogleDataTransport-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EJ3Jqtj/cIWTGkF6q3Hwz4og5qY=
-			</data>
 			<key>hash2</key>
 			<data>
-			jIDFnTsg8kxKN1CuHCTVpke/QsRBQXrxyDshRKyrjK8=
+			MQX8er9MTyzm2gDTSHdx3qfRTOHksp+mTsDkFen8woU=
 			</data>
 		</dict>
 		<key>Headers/GoogleDataTransport.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eyFUfLxFS5s1ge4AoHkHyWzTi98=
-			</data>
 			<key>hash2</key>
 			<data>
-			epPD/RJD/HmQTnhUBF4PbaOdvheTqY2yyvJOHPnCx4k=
+			lgD/3COoklLvYyFcICqbzZRMzY9tI0ZzqVKcVvqMuOo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			j0NufvJe8xgrgCjT9J02PJmqYcU=
-			</data>
 			<key>hash2</key>
 			<data>
 			8vLrUl+sfNbDFOOT4aLdjyton88PHl3Bgh3AMv4wfs8=

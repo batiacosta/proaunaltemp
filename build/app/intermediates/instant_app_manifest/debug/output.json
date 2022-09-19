@@ -21,7 +21,7 @@
       "properties": {
         "packageId": "co.edu.unal.proaunal",
         "split": "",
-        "minSdkVersion": "16"
+        "minSdkVersion": "24"
       }
     }
   ]

@@ -10,23 +10,23 @@
 		</data>
 		<key>Headers/GTMSessionFetcher.h</key>
 		<data>
-		FQdpVU0vlCL0LAxdxP1fhitXJCE=
+		BSHJFm140IUrEy+WQroOAPbbfwc=
 		</data>
 		<key>Headers/GTMSessionFetcherLogging.h</key>
 		<data>
-		FjhCrytj4st1G6JV0ooyxKsJ0m0=
+		vFtOipBuEf02JCLgs39Y4wvulB8=
 		</data>
 		<key>Headers/GTMSessionFetcherService.h</key>
 		<data>
-		GJzDy86YIHEAcaISSji7jUhwYgc=
+		l1NvgQnmqWY7nHU+am2ODmU/udU=
 		</data>
 		<key>Headers/GTMSessionUploadFetcher.h</key>
 		<data>
-		m6fpA/fbMijp+NUNwRnmdRl1/nQ=
+		IG6SPUop/AlBDPaLGhMt0LxihCw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x6SK3GEN6rl/nsa2kBQMr1kpDTM=
+		VeHP6Ks7TRAuHv8Z6x/E/uRhQF0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -37,10 +37,6 @@
 	<dict>
 		<key>Headers/GTMSessionFetcher-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uk5tfn4+qFjgRMutCcPDErlSaiE=
-			</data>
 			<key>hash2</key>
 			<data>
 			3rne+xIEztt63voNklSVEM3UXM+Jkgc6ENNW5IKGMh8=
@@ -48,54 +44,34 @@
 		</dict>
 		<key>Headers/GTMSessionFetcher.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FQdpVU0vlCL0LAxdxP1fhitXJCE=
-			</data>
 			<key>hash2</key>
 			<data>
-			EPa8n8zrVvnlrA1pQ3CyFrVsCBsnm/uXqCepVPvljgI=
+			AikS6joms+aKocfXKHq7stAZqLfsOoxdWTHRkLVidh4=
 			</data>
 		</dict>
 		<key>Headers/GTMSessionFetcherLogging.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FjhCrytj4st1G6JV0ooyxKsJ0m0=
-			</data>
 			<key>hash2</key>
 			<data>
-			HfMIKNIbv/n1W8TGT4vY0fdDkEfidJOuB5w+x4EynjA=
+			F7xvUlqnZ4ZstcfQaleLxrVyaal/wPqL9msBVjsAXxo=
 			</data>
 		</dict>
 		<key>Headers/GTMSessionFetcherService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GJzDy86YIHEAcaISSji7jUhwYgc=
-			</data>
 			<key>hash2</key>
 			<data>
-			dz0Rdg3ZZsJywsiur0GIvSxVwdAISGI3Gk0zypJX//E=
+			xC/vXxkrltm+k86mtEKbsQEOj+FO0uzlKRIuSyWa0fU=
 			</data>
 		</dict>
 		<key>Headers/GTMSessionUploadFetcher.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			m6fpA/fbMijp+NUNwRnmdRl1/nQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			jBJuIuK2fhooQo/7H0kFBEq1gEEct/33wsjwm8lZyCU=
+			Gr1/RHX4ExVPnbpwzuXDoEw4+Qq1g64k6/C7jKeWzcQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zd+B+N1kD6ufOJwjEQ1h4yl/05s=
-			</data>
 			<key>hash2</key>
 			<data>
 			s/7Ay5SAF/AZJnsEfDo0km7Zw2aVRXsBLuyUjeZo7/Y=
