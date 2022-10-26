@@ -3,7 +3,7 @@ import 'package:acin/ReusableWidgets/busqueda.dart';
 import 'package:flutter/material.dart';
 class BarraSuperior{
 
-  Color colorFuente;
+   Color colorFuente;
   PreferredSizeWidget Barra(BuildContext context, bool isWhite) {
     Color colorcito;
     String logoRuta;
@@ -23,7 +23,7 @@ class BarraSuperior{
       centerTitle: true,
       iconTheme: IconThemeData(
         size: MediaQuery.of(context).size.height * 0.05,
-        color: Colors.black, //change your color here
+        color: Colors.black,
       ),
 
       actions: [

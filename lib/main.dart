@@ -8,8 +8,6 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-
-
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();//Firebase
   await Firebase.initializeApp();
@@ -34,7 +32,6 @@ void main() async{
       )
   );
 }
-
 
 class Primera extends StatefulWidget{
   SplashScreen createState()=>SplashScreen();
@@ -82,11 +79,11 @@ class SplashScreen extends State<Primera>{
       Navigator.pushNamedAndRemoveUntil(context, '/MainMenu',(Route<dynamic> route)=>false);
     }
   }
+
   getValuesSF() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
   }
 }
-
 
 class SecondPage extends StatelessWidget{
   Widget build(BuildContext context){

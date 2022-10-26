@@ -100,6 +100,7 @@ flutter:
     - assets/b5.png
     - assets/b6.png
     - assets/b7.png
+    - assets/ReferenciasBoton.png
     - assets/NeumoniaAdquiridaEnComunidad/titulo.png
     - assets/NeumoniaAdquiridaEnComunidad/diagnostico.png
     - assets/NeumoniaAdquiridaEnComunidad/tratamiento.png
@@ -158,6 +159,33 @@ flutter:
     - assets/InfeccionIntraabdominal/intraabdominal_b2.png
     - assets/InfeccionIntraabdominal/intraabdominal_b3.png
     - assets/InfeccionIntraabdominal/intraabdominal_Tabla1.png
+
+    - assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png
+    - assets/MenejoDolorPosoperatorio/0.png
+    - assets/MenejoDolorPosoperatorio/1.png
+    - assets/MenejoDolorPosoperatorio/2.png
+    - assets/MenejoDolorPosoperatorio/3.png
+    - assets/MenejoDolorPosoperatorio/4.png
+    - assets/MenejoDolorPosoperatorio/5.png
+    - assets/MenejoDolorPosoperatorio/6.png
+    - assets/MenejoDolorPosoperatorio/7.png
+    - assets/MenejoDolorPosoperatorio/8.png
+    - assets/MenejoDolorPosoperatorio/9.png
+    - assets/MenejoDolorPosoperatorio/10.png
+    - assets/MenejoDolorPosoperatorio/dLeve1.png
+    - assets/MenejoDolorPosoperatorio/dLeve2.png
+    - assets/MenejoDolorPosoperatorio/dModerado1.png
+    - assets/MenejoDolorPosoperatorio/dModerado2.png
+    - assets/MenejoDolorPosoperatorio/dSevero1.png
+    - assets/MenejoDolorPosoperatorio/dSevero2.png
+    - assets/MenejoDolorPosoperatorio/dolorNoControlado.png
+    - assets/MenejoDolorPosoperatorio/enfoqueSistematico.png
+    - assets/MenejoDolorPosoperatorio/DolorLeve/Paso1.png
+    - assets/MenejoDolorPosoperatorio/DolorModerado/Paso1.png
+    - assets/MenejoDolorPosoperatorio/DolorSevero/Paso1.png
+    - assets/MenejoDolorPosoperatorio/DolorSevero/OpioidesPotentes.png
+    - assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png
+    - assets/MenejoDolorPosoperatorio/EnfoqueSistematico/AnalgesiaMultimodal.png
 
 
   fonts:

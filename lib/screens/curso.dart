@@ -111,28 +111,32 @@ class _CursoState extends State<Curso> {
   }
   Widget onlineContenido(context){
     CollectionReference contenidos = FirebaseFirestore.instance.collection('Contenidos');
+    final documento = contenidos.doc('Curso').snapshots();
+
     return new StreamBuilder(
-        stream: contenidos.doc("Curso").snapshots(),
+        stream: documento,
         builder: (context, snapshot){
           if(!snapshot.hasData) return offlineContenido(context);
-          return Column(
-            children: new List.generate(snapshot.data['parrafos'].length, (index) {
-              //bibliografiaContent(context, snapshot.data['parrafos'][0])
-              if(snapshot.data['parrafos'][index]['texto'] != null){
-                return texto(context, snapshot.data['parrafos'][index]['texto']);
+            return Column(
+              children: new List.generate(snapshot.data['parrafos']?.length, (index) {
+                //bibliografiaContent(context, snapshot.data['parrafos'][0])
+                if(snapshot.data['parrafos'] != null){
+                  return texto(context, snapshot.data['parrafos'][index]['texto']);
+                }
+                else if(snapshot.data['parrafos'][index]['link'] != null){
+                  return link(context, snapshot.data['parrafos'][index]['link']);
+                }
+                else if(snapshot.data['parrafos'][index]['imagen'] != null){
+                  return imagen(context);
+                }
+                else{
+                  return Text("No se encontró nada");
+                }
               }
-              else if(snapshot.data['parrafos'][index]['link'] != null){
-                return link(context, snapshot.data['parrafos'][index]['link']);
-              }
-              else if(snapshot.data['parrafos'][index]['imagen'] != null){
-                return imagen(context);
-              }
-              else{
-                return Text("No se encontró nada");
-              }
-            }
-            ),
-          );
+              ),
+            );
+
+
         }
     );
   }

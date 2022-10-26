@@ -4,6 +4,7 @@ import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_menu.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_menu.dart';
 import 'package:acin/screens/InfeccionTractoUrinario/infeccion_tractu_urinario_menu.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/MenejoDolorPosoperatorio.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/neumonia_adquirida_en_comunidad.dart';
 import 'package:acin/screens/ProfilaxisQuirurgica/profilaxis_quirurgica_menu.dart';
 import 'package:flutter/material.dart';
@@ -51,23 +52,6 @@ class _MainMenuState extends State<MainMenu> {
     return new ListView(
       children: [
         Container(height: MediaQuery.of(context).size.height*0.05,),
-        /*
-        Container(
-          color: colorMedio,
-          child: Column(
-            children: [
-              Container(height: MediaQuery.of(context).size.height*0.05,),
-              Text(
-                  "Uso prudente de\nANTIMICROBIANOS",
-                textAlign: TextAlign.center,
-                style: _estiloLetra1(context),
-              ),
-              Container(height: MediaQuery.of(context).size.height*0.005,),
-            ],
-          ),
-        ),
-        */
-
 
         Container(
           margin: margenNormal(context),
@@ -131,6 +115,18 @@ class _MainMenuState extends State<MainMenu> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ProfilaxisQuirurgicaMenu()),
+                  );
+                },
+              ),
+              TextButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Color(0x00ffffff)),
+                ),
+                child:Image.asset('assets/b6.png', ),
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ManejoDolorPosoperatorio()),
                   );
                 },
               ),
