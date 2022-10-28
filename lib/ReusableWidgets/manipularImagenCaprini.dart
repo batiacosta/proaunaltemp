@@ -6,12 +6,16 @@ import 'package:flutter/material.dart';
 import 'package:matrix_gesture_detector/matrix_gesture_detector.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class ManipularImagen extends StatefulWidget {
+class ManipularImagenCaprini extends StatefulWidget {
   String imageName;
-  ManipularImagen(this.imageName);
+  ManipularImagenCaprini(this.imageName);
   _ManipularImagen createState() => _ManipularImagen();
 }
-class _ManipularImagen extends State<ManipularImagen>{
+class _ManipularImagen extends State<ManipularImagenCaprini>{
+  GeneralSettings s = GeneralSettings();
+  ColorPalette c = ColorPalette();
+
+  Widget _caprini = Container();
 
   @override
   void initState() {
@@ -21,7 +25,7 @@ class _ManipularImagen extends State<ManipularImagen>{
   @override
   Widget build(BuildContext context) {
     final ValueNotifier<Matrix4> notifier = ValueNotifier(Matrix4.identity());
-
+    _getResult();
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: BarraSuperior().Barra(context, false),
@@ -35,23 +39,32 @@ class _ManipularImagen extends State<ManipularImagen>{
           builder: (ctx, child) {
             return Transform(
               transform: notifier.value,
-              child: Stack(
-                children: <Widget>[
-                  Container(
-                    color: Colors.white,
-                  ),
-
-                  Container(
-
-                      padding: EdgeInsets.all(32),
-                    child: Image.asset(widget.imageName),
-
-                  ),
-                ],
+              child: Container(
+                  color: Colors.white,
+                  padding: EdgeInsets.all(32),
+                  alignment: Alignment(0, 0),
+                  child: Column(
+                    children: [
+                      _caprini,
+                      s.espacio(),
+                      Image.asset(widget.imageName, height: 500,),
+                    ],
+                  )
               ),
             );
           },
         ),
+      ),
+    );
+  }
+  _getResult() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    var capriniValue = prefs.getInt('Caprini') ?? 0;
+    _caprini = Container(
+      child: Text(
+        'Caprini: $capriniValue',
+        style: s.h1Bold(context, c.tromboprofilaxisAzulClaroIntenso),
+        textAlign: TextAlign.center,
       ),
     );
   }

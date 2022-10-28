@@ -50,7 +50,7 @@ class Headers extends StatelessWidget {
   _estiloLetra1(context) {
     return new TextStyle(
         fontFamily: 'Ancizar',
-        fontSize: MediaQuery.of(context).size.width * 0.07,
+        fontSize: MediaQuery.of(context).size.width * 0.06,
         color: Colors.white);
   }
   margenNormal(context){

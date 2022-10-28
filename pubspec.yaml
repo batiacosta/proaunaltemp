@@ -91,6 +91,7 @@ flutter:
     - assets/m3.png
     - assets/m4.png
     - assets/m5.png
+    - assets/m7.png
     - assets/EncabezadoMenu.png
     - assets/logoApp.png
     - assets/b1.png
@@ -186,6 +187,44 @@ flutter:
     - assets/MenejoDolorPosoperatorio/DolorSevero/OpioidesPotentes.png
     - assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png
     - assets/MenejoDolorPosoperatorio/EnfoqueSistematico/AnalgesiaMultimodal.png
+
+    - assets/EnfermedadTromboembolicaVenosa/Tromboprofilaxis.png
+    - assets/EnfermedadTromboembolicaVenosa/Grafica1.png
+    - assets/EnfermedadTromboembolicaVenosa/Infografia1.png
+    - assets/EnfermedadTromboembolicaVenosa/calculadora.png
+    - assets/EnfermedadTromboembolicaVenosa/abdominopelvicoTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/abdominopelvicoTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/abdominopelvicoTabla3.png
+    - assets/EnfermedadTromboembolicaVenosa/abdominopelvicoTabla4.png
+    - assets/EnfermedadTromboembolicaVenosa/FarmacologiaNoOrtopedica.png
+    - assets/EnfermedadTromboembolicaVenosa/FarmacologiaOrtopedica.png
+    - assets/EnfermedadTromboembolicaVenosa/obesidadTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/obesidadTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/UrologicoTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/UrologicoTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/UrologicoTabla3.png
+    - assets/EnfermedadTromboembolicaVenosa/cirugiaPlasticaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/cirugiaPlasticaTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/OtorrinolaringologiaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/OtorrinolaringologiaTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/CardiovascularTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/CardiovascularTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/VascularPerifericoTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/VascularPerifericoTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/ToracicaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/ToracicaTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/ToracicaTabla3.png
+    - assets/EnfermedadTromboembolicaVenosa/ObstetriciaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/ObstetriciaTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/NeurologicaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/NeurologicaTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/NeurologicaTabla3.png
+    - assets/EnfermedadTromboembolicaVenosa/OrtopediaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/OrtopediaTabla2.png
+    - assets/EnfermedadTromboembolicaVenosa/OrtopediaTabla3.png
+    - assets/EnfermedadTromboembolicaVenosa/TraumatologiaTabla1.png
+    - assets/EnfermedadTromboembolicaVenosa/TraumatologiaTabla2.png
+
 
 
   fonts:
