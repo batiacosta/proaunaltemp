@@ -71,7 +71,7 @@ class _ETCardiovascularState extends State<ETCardiovascular> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETCardiovascular'),
           ),
           s.espacio(),
           Container(

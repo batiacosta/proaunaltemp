@@ -11,6 +11,7 @@ import 'package:acin/ReusableWidgets/headers.dart';
 import 'package:acin/ReusableWidgets/manipularImagen.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/CalculadoraCaprini.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETAbdominopelvico.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCardiovascular.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCirugiaPlastica.dart';
@@ -66,6 +67,7 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
           "/ETOrtopedia":(BuildContext context)=>ETOrtopedia(),
           "/ETTraumatologia":(BuildContext context)=>ETTraumatologia(),
           "/FactoresRiesgoSangrado":(BuildContext context)=>FactoresRiesgoSangrado(),
+          "/CalculadoraCaprini":(BuildContext context)=>CalculadoraCaprini(),
 
         },
         home: LayoutBuilder(

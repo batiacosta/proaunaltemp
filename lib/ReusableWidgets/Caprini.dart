@@ -1,10 +1,12 @@
 import 'package:acin/ReusableWidgets/ColorPalette.dart';
 import 'package:acin/ReusableWidgets/GenralSettings.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/CalculadoraCaprini.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Caprini extends StatefulWidget {
-  Caprini({Key key}) : super(key: key);
+  String atrasRoute;
+  Caprini({Key key, this.atrasRoute}) : super(key: key);
 
   @override
   State<Caprini> createState() => _CapriniState();
@@ -19,7 +21,6 @@ class _CapriniState extends State<Caprini> {
   double result = 0;
   @override
   Widget build(BuildContext context) {
-    _setResult();
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
@@ -51,31 +52,17 @@ class _CapriniState extends State<Caprini> {
                     ],
                   ),
                 ),
-              onTap: () => setState(() => _state = !_state),
+              onTap: () => Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                      new CalculadoraCaprini(atrasRoute: widget.atrasRoute,))),
             ),
-            _calculadora(),
           ],
         )
     );
   }
 
-  Widget _calculadora(){
-    if(_state){
-      return Form(
-          child: Column(
-            children: [
-              Text("La calculadorooora")
-            ],
-          )
-      );
-    }else{
-      return Container();
-    }
-  }
 
-  _setResult() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setInt('Caprini', result.toInt());
-  }
 
 }

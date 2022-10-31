@@ -71,7 +71,7 @@ class _ETUrologicoState extends State<ETUrologico> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETUrologico'),
           ),
           s.espacio(),
           Container(

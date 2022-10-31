@@ -71,7 +71,7 @@ class _ETOrtopediaState extends State<ETOrtopedia> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETOrtopedia'),
           ),
           s.espacio(),
           Container(

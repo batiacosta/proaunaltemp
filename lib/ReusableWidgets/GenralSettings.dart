@@ -69,6 +69,23 @@ class GeneralSettings{
     color: color,
     fontStyle: FontStyle.italic
   );
+  TextStyle small(context, Color color) => TextStyle(
+    fontFamily: 'Ancizar',
+    fontSize: MediaQuery.of(context).size.width * 0.04,
+    color: color,
+  );
+  TextStyle smallBold(context, Color color) => TextStyle(
+      fontFamily: 'Ancizar',
+      fontSize: MediaQuery.of(context).size.width * 0.04,
+      color: color,
+      fontWeight: FontWeight.bold
+  );
+  TextStyle smallItalic(context, Color color) => TextStyle(
+      fontFamily: 'Ancizar',
+      fontSize: MediaQuery.of(context).size.width * 0.04,
+      color: color,
+      fontStyle: FontStyle.italic
+  );
   Container espacio()=> Container(
     height: 10,
   );

@@ -71,7 +71,7 @@ class _ETToracicaState extends State<ETToracica> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETToracica'),
           ),
           s.espacio(),
           Container(

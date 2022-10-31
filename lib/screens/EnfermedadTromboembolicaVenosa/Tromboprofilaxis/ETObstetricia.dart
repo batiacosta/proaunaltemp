@@ -71,7 +71,7 @@ class _ETObstetriciaState extends State<ETObstetricia> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETObstetricia'),
           ),
           s.espacio(),
           Container(

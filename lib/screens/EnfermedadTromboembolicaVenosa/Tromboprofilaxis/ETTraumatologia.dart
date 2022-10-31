@@ -71,7 +71,7 @@ class _ETTraumatologiaState extends State<ETTraumatologia> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETTraumatologia'),
           ),
           s.espacio(),
           Container(

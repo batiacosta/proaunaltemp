@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		v6oevQClUrUqBCgXp7b931AJKbo=
+		xPgQSIl+DgURhO8QaIll1lQWOqs=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -100,13 +100,21 @@
 		<data>
 		NJ6Ao7Ocun32ySxg1SsMMFZ2fbU=
 		</data>
+		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/TraumatologiaTabla1.png</key>
+		<data>
+		zUfcf6oIAlPqiSoS9mve2CgXkPY=
+		</data>
+		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/TraumatologiaTabla2.png</key>
+		<data>
+		wT7S00ypwmkfQzycq/kVifx3waU=
+		</data>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/Tromboprofilaxis.png</key>
 		<data>
 		ma08+vmH63ndoy1f3NUHwbE/LCk=
 		</data>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/UrologicoTabla1.png</key>
 		<data>
-		k+xZRNMCG0Ip9Q9KjtL0tz3rcDQ=
+		5EvUGyUk6CPOxwkiziCnoftXL7U=
 		</data>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/UrologicoTabla2.png</key>
 		<data>
@@ -114,7 +122,7 @@
 		</data>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/UrologicoTabla3.png</key>
 		<data>
-		FDSF9zbJLOmTf/l9ebXetSPZ4zc=
+		9+0o2eOy1yKf8Xm/OqRBfqXMiog=
 		</data>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/VascularPerifericoTabla1.png</key>
 		<data>
@@ -618,7 +626,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		B1HMkee9UA/JDXoR8srgQHMWvnY=
+		pQrVAnOV+jl0vLdPQaImIVW3/OE=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -635,7 +643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2cnT6VNWdFyRcry445+5m+9f3ILyMAM8m7yahFbZDkU=
+			ccT0XEOJfCUqCQw+JQMUymWqVt1IEFltx67PQomZlkM=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -792,6 +800,20 @@
 			PeEtKQdRBekpFIvYZLLiwZewETPXO0Px3ykJuMSisJY=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/TraumatologiaTabla1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/jvbR3aIqbUZzbvxtiA4l4ryKnu5JmbSwdRwzRhn9zc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/TraumatologiaTabla2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ld93LZO98htM3Rd5sX3qddW9HFuQC8psMnYukTODI4w=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/Tromboprofilaxis.png</key>
 		<dict>
 			<key>hash2</key>
@@ -803,7 +825,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7E2yHadkT1l+XoEogmGGZ52UVmbw8HCgOPeeUhbAG9Q=
+			eXNceV7IofIK3FEQ5IKZ9fzXhLLPowxzqY0nm08e6ZQ=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/UrologicoTabla2.png</key>
@@ -817,7 +839,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o5NOhoYTNecU8XJ9YT0F/En1QB3QII+WWZLpgZvaCVI=
+			ojbBIvXL8xiLffR3xDSnH7rcEChN6Q9Ccp/sbR2A/v4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/EnfermedadTromboembolicaVenosa/VascularPerifericoTabla1.png</key>
@@ -1699,7 +1721,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zU6Wfsufu2WURcoSt3vgp4KmHfO6Gj/fL+uNwwpJQbY=
+			gcoWRKxJUCDXs/Qyd5pPUSFAjZ+E7ZgXDjoStDJxY0c=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

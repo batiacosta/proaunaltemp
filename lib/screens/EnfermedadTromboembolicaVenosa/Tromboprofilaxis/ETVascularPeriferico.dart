@@ -71,7 +71,7 @@ class _ETVascularPerifericoState extends State<ETVascularPeriferico> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETVascularPeriferico'),
           ),
           s.espacio(),
           Container(

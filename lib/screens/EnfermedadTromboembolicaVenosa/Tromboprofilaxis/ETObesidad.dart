@@ -71,7 +71,7 @@ class _ETObesidadState extends State<ETObesidad> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETObesidad'),
           ),
           s.espacio(),
           Container(

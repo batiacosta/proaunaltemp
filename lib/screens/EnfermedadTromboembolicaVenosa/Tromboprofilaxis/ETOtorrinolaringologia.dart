@@ -71,7 +71,7 @@ class _ETOtorrinolaringologiaState extends State<ETOtorrinolaringologia> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETOtorrinolaringologia'),
           ),
           s.espacio(),
           Container(

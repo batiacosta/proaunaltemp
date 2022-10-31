@@ -1,5 +1,6 @@
 import 'package:acin/ReusableWidgets/ColorPalette.dart';
 import 'package:acin/ReusableWidgets/GenralSettings.dart';
+import 'package:acin/ReusableWidgets/RoundedContainerRegularBold.dart';
 import 'package:acin/ReusableWidgets/barraInferior.dart';
 import 'package:acin/ReusableWidgets/barraSuperior.dart';
 import 'package:flutter/material.dart';
@@ -61,10 +62,10 @@ class _ManipularImagen extends State<ManipularImagenCaprini>{
     SharedPreferences prefs = await SharedPreferences.getInstance();
     var capriniValue = prefs.getInt('Caprini') ?? 0;
     _caprini = Container(
-      child: Text(
-        'Caprini: $capriniValue',
-        style: s.h1Bold(context, c.tromboprofilaxisAzulClaroIntenso),
-        textAlign: TextAlign.center,
+      child: RoundedContainerRegularBold(
+        color: c.tromboprofilaxisAzulClaroIntenso,
+        colorText: c.white,
+        text: 'Caprini: $capriniValue',
       ),
     );
   }

@@ -71,7 +71,7 @@ class _ETNeurologicaState extends State<ETNeurologica> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETNeurologica'),
           ),
           s.espacio(),
           Container(

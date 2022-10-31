@@ -71,7 +71,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETCirugiaPlastica'),
           ),
           s.espacio(),
           Container(

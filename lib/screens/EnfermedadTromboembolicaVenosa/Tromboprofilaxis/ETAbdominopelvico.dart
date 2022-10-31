@@ -71,7 +71,7 @@ class _ETAbdominopelvicoState extends State<ETAbdominopelvico> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Caprini(),
+            child: Caprini(atrasRoute: '/ETAbdominopelvico'),
           ),
           s.espacio(),
           Container(
