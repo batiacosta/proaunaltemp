@@ -1,6 +1,7 @@
 import 'package:acin/ReusableWidgets/barraInferior.dart';
 import 'package:acin/ReusableWidgets/barraSuperior.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/EnfermedadTromboembolicaVenosa.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_menu.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_menu.dart';
 import 'package:acin/screens/InfeccionTractoUrinario/infeccion_tractu_urinario_menu.dart';
@@ -127,6 +128,18 @@ class _MainMenuState extends State<MainMenu> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ManejoDolorPosoperatorio()),
+                  );
+                },
+              ),
+              TextButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Color(0x00ffffff)),
+                ),
+                child:Image.asset('assets/b7.png', ),
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => EnfermedadTromboembolicaVenosa()),
                   );
                 },
               ),
