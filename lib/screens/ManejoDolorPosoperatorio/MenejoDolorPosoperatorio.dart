@@ -119,8 +119,32 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
                               children: [
                                 InkWell(
                                   child: Image.asset("assets/MenejoDolorPosoperatorio/dLeve1.png"),
-                                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
+                                  onTap: ()=> {},
                                 ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width*0.17,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                InkWell(
+                                  child: Image.asset("assets/MenejoDolorPosoperatorio/0.png",height: 35),
+                                  onTap: ()=> {},
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width*0.65,
+                            child: Column(
+                              children: [
                                 InkWell(
                                   child: Image.asset("assets/MenejoDolorPosoperatorio/dLeve2.png"),
                                   onTap: ()=>_moveToPage(context, "/DolorLeve"),
@@ -134,10 +158,6 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/0.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
-                                ),
                                 InkWell(
                                   child: Image.asset("assets/MenejoDolorPosoperatorio/1.png",height: 35),
                                   onTap: ()=>_moveToPage(context, "/DolorLeve"),
