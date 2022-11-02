@@ -36,9 +36,9 @@ class _RegistroState extends State<Registro> {
   String _confirmPassword = "";
   String _fecha = "";
   String _especialidad = " ";
-  String _errorStatus;
-  String _errorStatus2;
-  String _errorStatus3;
+   String _errorStatus;
+   String _errorStatus2;
+   String _errorStatus3;
   bool aceptoTerminos = false;
   final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
 
@@ -225,7 +225,7 @@ class _RegistroState extends State<Registro> {
                 Container(height:MediaQuery.of(context).size.height*0.025,),
                 Container(
                   child: InkWell(
-                    child: Text('V 1.0.0\nPolíticas',
+                    child: Text('V 1.0.1\nPolíticas',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontFamily: "Ancizar",
@@ -590,7 +590,7 @@ class _RegistroState extends State<Registro> {
             if (auth.currentUser != null) {
               print(auth.currentUser.uid);
 
-              return users.doc(auth.currentUser.uid)
+            return users.doc(auth.currentUser.uid)
                   .set({
                 'Fecha': _fecha,
                 'Especialidad': _especialidad,
@@ -627,11 +627,6 @@ class _RegistroState extends State<Registro> {
           _errorStatus='Debe aceptar las políticas';
         });
       }
-
-
-
-
-
     }
 
   addIntToSFPremium() async {
@@ -728,9 +723,7 @@ class _RegistroState extends State<Registro> {
   }
   _estiloLetra1Error(context) {
     return new TextStyle(
-        //fontFamily: 'Ancizar',
         fontSize: MediaQuery.of(context).size.width * 0.032,
-        //fontWeight: FontWeight.bold,
         color: Color(0xffCF272A));
   }
 

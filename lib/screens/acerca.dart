@@ -86,7 +86,17 @@ class AcercaDe extends StatelessWidget {
                     ),TextSpan(
                         text: "Médico Universidad Militar Nueva Granada, MSc (c) Epidemiología Clínica Universidad Nacional de Colombia.\n\n",
                         style: _estiloLetra1(context)
+                    ),
+
+                    TextSpan(
+                        text: "Jairo Alberto Morantes Caballero\n",
+                        style: _estiloLetra1Bold(context)
                     ),TextSpan(
+                        text: "Especialista Medicina Interna Universidad Nacional, Epidemiología- Universidad del Rosario, Director de Clínicas Médicas HUN, Director de Prestación de Servicios hospitalarios y ambulatorios HUN, Docente Medicina Interna Universidad Nacional\n\n",
+                        style: _estiloLetra1(context)
+                    ),
+
+                    TextSpan(
                         text: "Desarrolladores\n\n",
                         style: _estiloLetra1Bold(context)
                     ),TextSpan(

@@ -74,8 +74,8 @@ class VerImagen extends StatelessWidget {
               Expanded(
                 child: Container(
                   color: fondoBoton,
-                  child: FlatButton(
-                    onPressed: (){
+                  child: InkWell(
+                    onTap: (){
                       Navigator.push(
                           context,
                           new MaterialPageRoute(
@@ -89,12 +89,12 @@ class VerImagen extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child: FlatButton(
+                child: InkWell(
 
                   child: Stack(children:<Widget>[
                     Image.asset(image,width: MediaQuery.of(context).size.width * 1,),
                   ]),
-                  onPressed: (){
+                  onTap: (){
                     Navigator.push(
                         context,
                         new MaterialPageRoute(
@@ -121,27 +121,14 @@ class VerImagen extends StatelessWidget {
                       builder: (BuildContext context) => new ManipularImagen(image)));
             },
           ),
-          /*
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Color(0x00ffffff)),
-            ),
-            child:Image.asset(image, ),
-            onPressed: (){
-              Navigator.push(
-                  context,
-                  new MaterialPageRoute(
-                      builder: (BuildContext context) => new ManipularImagen(image)));
-            },
-          ),*/
           Positioned(
             bottom: 0,
             right: 0,
-            child: FlatButton(
+            child: InkWell(
               child: Stack(children:<Widget>[
                 Image.asset('assets/ExpandIcon.png', width: 20, height: 20,),
               ]),
-              onPressed: (){
+              onTap: (){
                 Navigator.push(
                     context,
                     new MaterialPageRoute(
