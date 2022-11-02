@@ -160,7 +160,7 @@ class _DolorSeveroState extends State<DolorSevero> {
                 s.espacio(),
                 Container(
                   width: MediaQuery.of(context).size.width,
-                  margin: s.margenNormal(context),
+                  margin: s.margenIzquierdo(context),
                   child: Image.asset("assets/MenejoDolorPosoperatorio/DolorSevero/OpioidesPotentes.png"),
                 ),
                 Container(

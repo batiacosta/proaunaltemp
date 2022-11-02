@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		OxA3Ka9BqlD7/EuGKiTGMVNuVqY=
+		ROr0tZ1hPVVawPNze7dpsVJRjes=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		bWAcNXWEeq7rm8qbXEn+fM3ApME=
+		W3fH7HAqSYzgqbcDAGh9MJLK1yM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -370,7 +370,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/MenejoDolorPosoperatorio/DolorSevero/OpioidesPotentes.png</key>
 		<data>
-		7kpt9wjcScYcbF2LpOdfRgpW97s=
+		aQ7U4A5mj/LUmetHSdw9JpQaH98=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/MenejoDolorPosoperatorio/DolorSevero/Paso1.png</key>
 		<data>
@@ -386,7 +386,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/MenejoDolorPosoperatorio/dLeve1.png</key>
 		<data>
-		DyyJzn++jYEIK3BHK3H7PLUJB3I=
+		/XUOhPl856xcw3Z9oYDeU6QEo10=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/MenejoDolorPosoperatorio/dLeve2.png</key>
 		<data>
@@ -674,7 +674,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		pQrVAnOV+jl0vLdPQaImIVW3/OE=
+		x95IZZomgjhSSnMOj2XC/u5Pr88=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -698,7 +698,7 @@
 		</data>
 		<key>Frameworks/FirebaseAuth.framework/FirebaseAuth</key>
 		<data>
-		QquQg8vmy0112/5u73uLcitupuk=
+		0rv4Fb483A3dLFYsvXiBMIKQLJU=
 		</data>
 		<key>Frameworks/FirebaseAuth.framework/Info.plist</key>
 		<data>
@@ -710,7 +710,7 @@
 		</data>
 		<key>Frameworks/FirebaseCore.framework/FirebaseCore</key>
 		<data>
-		L6KmP8wBCIYxz2z6sbLFZTbgpPY=
+		okLmErrQDMGkYXlkqRUDQwpPY0s=
 		</data>
 		<key>Frameworks/FirebaseCore.framework/Info.plist</key>
 		<data>
@@ -722,7 +722,7 @@
 		</data>
 		<key>Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics</key>
 		<data>
-		oie5L5baxg7fp6g6loQ1XinDMjI=
+		CqOVpbqBOjNbj8Afl7EfV/Kq970=
 		</data>
 		<key>Frameworks/FirebaseCoreDiagnostics.framework/Info.plist</key>
 		<data>
@@ -746,7 +746,7 @@
 		</data>
 		<key>Frameworks/FirebaseFirestore.framework/FirebaseFirestore</key>
 		<data>
-		OLH17uXBVEvNtMAxPdFbSMWyIuo=
+		J20BsyFozabpUNbQI2MeqIs8Xuo=
 		</data>
 		<key>Frameworks/FirebaseFirestore.framework/Info.plist</key>
 		<data>
@@ -854,7 +854,7 @@
 		</data>
 		<key>Frameworks/GoogleDataTransport.framework/GoogleDataTransport</key>
 		<data>
-		VccH/90ZFtiXzv7eLIqsYN5HAxs=
+		jM3J+Oq1R7JUJRfJeVtS17Bidik=
 		</data>
 		<key>Frameworks/GoogleDataTransport.framework/Info.plist</key>
 		<data>
@@ -866,7 +866,7 @@
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/GoogleUtilities</key>
 		<data>
-		yNQGR6RDGcD4lu84zqRirpsU1SY=
+		G9mXNJLqet0RLz6HhF4GHDHfj1U=
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
 		<data>
@@ -910,7 +910,7 @@
 		</data>
 		<key>Frameworks/connectivity.framework/connectivity</key>
 		<data>
-		edI31ApRwjjeN+jUa1DP3YPJsyY=
+		60OtYp3nIOi8Fwa+W9Wcx7Gnvfo=
 		</data>
 		<key>Frameworks/grpc.framework/Info.plist</key>
 		<data>
@@ -1125,7 +1125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BN7ZptSUZlu7x2vXhTg/RTXhtZyqwUny77NbxIb8C1A=
+			hRi+a04wrjHv7VdwQaxplF6Mmd+UwiuBESUnDVHMmnM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -1139,7 +1139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iIqMekjkOINjpHmypoIyClmlDXt0qJQ0d4N26rv/yYI=
+			zU8wgfASvzE43ODnIQu9WcnscoF6MDMtndHiHcxnx1Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -1692,7 +1692,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fq99lUk7gankqKnK5+pFNu+ydMOHmAEE2SnTJ5kUdMc=
+			0ysvqCl1Zo2uiiNJqbwSuM+NTfpEoB96k85s8kevoTY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/MenejoDolorPosoperatorio/DolorSevero/Paso1.png</key>
@@ -1720,7 +1720,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			soG7TzjKl/4O91ok6oiN5au6PtTD+wsJcB2Xy+RCROU=
+			fznovE4oY9QsKv/C42jony4AOsvyPdVO2AuBDkPG0r8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/MenejoDolorPosoperatorio/dLeve2.png</key>
@@ -2224,7 +2224,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gcoWRKxJUCDXs/Qyd5pPUSFAjZ+E7ZgXDjoStDJxY0c=
+			hZrRLspCzosvoLXLl6rlexw3/XbrsadSMAPKPGG5Ebg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
@@ -2266,7 +2266,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R561wWATniXq4og+Utok85VVKEeziQKBIt9g/ETyJ6k=
+			NW0ghjubKkm9zmr6xGTtk0brVqINI/DY35nYT0HjE3A=
 			</data>
 		</dict>
 		<key>Frameworks/FirebaseAuth.framework/Info.plist</key>
@@ -2287,7 +2287,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TA0vcgw2pnDcTIimDoOWdHIbOrAofPshpVmne01NQVI=
+			ddZxqPChgY4/U/jdlUMygTXeYhDKAKXotpIEQe26etk=
 			</data>
 		</dict>
 		<key>Frameworks/FirebaseCore.framework/Info.plist</key>
@@ -2308,7 +2308,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jb4glGv10aqY8MNNEajuiBxVyQz0Z5mZslvLMB2SN7M=
+			aeWzEqszQKu3rQEvQcJUEG+Q5X1n9pXlp8BdG6yiJ2k=
 			</data>
 		</dict>
 		<key>Frameworks/FirebaseCoreDiagnostics.framework/Info.plist</key>
@@ -2350,7 +2350,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pcRBQAvTZqb2ISmh0Txe15QVzqZOxULoS7HR+qX/Yjs=
+			a8TZ2NcCO6665wpKfcxtI/BUsWv4N2cqcEtzzetZBaI=
 			</data>
 		</dict>
 		<key>Frameworks/FirebaseFirestore.framework/Info.plist</key>
@@ -2539,7 +2539,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tIJmRHuYo69o99QRASIY3YDwE6tX5LFKyiT+3wSr7SM=
+			suuFnJ0YAqZja7JWBQLgKskbydJbsad9ThGlkJO3/EU=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleDataTransport.framework/Info.plist</key>
@@ -2560,7 +2560,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pbYpNVOoCp9Ka2u1oMgvhCvywv2MKh+vk0DMoZi9QoA=
+			osSe/tE0FJwGIURDih6+m1wwWbMGoZPkyl3QWaB0zUw=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
@@ -2637,7 +2637,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujFauZDadoTG8ODCgxttbjXFuQKUtYLWQVfkHnnnRhw=
+			J/x4c1F9BjknM39Yp2DDYuz3Fi4cDjcepjB89nrzygw=
 			</data>
 		</dict>
 		<key>Frameworks/grpc.framework/Info.plist</key>

@@ -81,7 +81,6 @@ class _DolorLeveState extends State<DolorLeve> {
                         width: MediaQuery.of(context).size.width*0.55,
                         child: Column(
                           children: [
-                            Image.asset("assets/MenejoDolorPosoperatorio/dLeve1.png"),
                             Image.asset("assets/MenejoDolorPosoperatorio/dLeve2.png"),
                           ],
                         ),
@@ -110,7 +109,7 @@ class _DolorLeveState extends State<DolorLeve> {
                   margin: s.margenNormal(context),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "DOLOR LEVE: 0 - 3",
+                    "DOLOR LEVE: 1 - 3",
                     textAlign: TextAlign.left,
                     style: s.h1Bold(context, c.dolorPosoperatorioGreen),
                   ),

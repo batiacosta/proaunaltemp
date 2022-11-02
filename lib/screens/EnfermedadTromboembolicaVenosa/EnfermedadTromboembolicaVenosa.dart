@@ -249,7 +249,7 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                 InkWell(
                   child: RoundedContainer(
                     color: c.enfermedadTromboembolicaVenosaAmarillo,
-                    text: 'CONCIDERACIONES GENERLES',
+                    text: 'CONSIDERACIONES GENERALES',
                     colorText: c.white,
                   ),
                   onTap: ()=> setState(()=> _state[3] = !_state[3]),
