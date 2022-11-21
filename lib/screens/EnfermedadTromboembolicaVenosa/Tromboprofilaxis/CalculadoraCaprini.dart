@@ -23,14 +23,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 
-enum Edad { cuarenta, cuarentaSecenta, secentaSetentaCuatro, setentaCinco }
 
-Map<Edad, int> edadValores = <Edad, int>{
-  Edad.cuarenta:  0,
-  Edad.cuarentaSecenta: 1,
-  Edad.secentaSetentaCuatro: 2,
-  Edad.setentaCinco: 3
-};
 class CalculadoraCaprini extends StatefulWidget {
   String atrasRoute;
   CalculadoraCaprini({Key key, this.atrasRoute}) : super(key: key);
@@ -45,7 +38,7 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
   Color colorClaro;
   Color colorMedio;
 
-  double resulado;
+  double resultado;
   List<int> valorGuardado = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -59,14 +52,8 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
     false, false, false, false, false, false, false, false, false, false,
   ];
   int edadNumber = 0;
-
-  int rangoEdad;
   int sex = 0;
-
   int resultadoFinal = 0;
-
-
-  List<bool> _state = [false, false, false, false];
 
   @override
   Widget build(BuildContext context) {
@@ -457,7 +444,21 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
                 RoundedContainerRegularBold(
                   color: c.tromboprofilaxisAzulClaroIntenso,
                   colorText: c.white,
-                  text: 'Caprini: $resultadoFinal',
+                  text: 'Valor Caprini: $resultadoFinal',
+                ),
+
+                Container(
+                  margin: s.margenNormalEspaciado(context),
+                  child: InkWell(
+                    child: RoundedContainerRegularBold(
+                      color: c.tromboprofilaxisAzulClaro,
+                      colorText: c.white,
+                      text: 'Limpiar',
+                    ),
+                    onTap: () {
+                          _reset();
+                    },
+                  ),
                 ),
 
                 s.espacio(),
@@ -745,6 +746,24 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
       return Container();
     }
 
+  }
+
+  void _reset(){
+    print('Se resetea');
+    setState(() {
+      edadNumber = 0;
+      sex = 0;
+      resultado = 0;
+      resultadoFinal = 0;
+      for(int i = 0; i< valorGuardado.length; i++){
+        valorGuardado[i] = 0;
+      }
+      for(int i = 0; i< switches.length; i++){
+        switches[i] = false;
+      }
+
+      _setResult();
+    });
   }
 
   _setResult() async {

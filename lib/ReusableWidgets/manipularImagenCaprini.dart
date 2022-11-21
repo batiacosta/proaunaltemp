@@ -48,7 +48,10 @@ class _ManipularImagen extends State<ManipularImagenCaprini>{
                     children: [
                       _caprini,
                       s.espacio(),
-                      Image.asset(widget.imageName, height: 500,),
+                      Container(
+                        height: MediaQuery.of(context).size.height*0.5,
+                        child: Image.asset(widget.imageName, ),
+                      ),
                     ],
                   )
               ),
@@ -60,7 +63,12 @@ class _ManipularImagen extends State<ManipularImagenCaprini>{
   }
   _getResult() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    var capriniValue = prefs.getInt('Caprini') ?? 0;
+    int capriniValue = 0;
+    setState(
+      () {
+        capriniValue = prefs.getInt('Caprini') ?? 0;
+      },
+    );
     _caprini = Container(
       child: RoundedContainerRegularBold(
         color: c.tromboprofilaxisAzulClaroIntenso,
