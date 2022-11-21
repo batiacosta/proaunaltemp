@@ -58,7 +58,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -75,7 +75,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                       Container(
                         child: InkWell(
                           child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1ZfnfhzzvVsABdN07UIAYW0dDJ0LUegrg/view?usp=share_link"),
                         ),
                       )
                     ],
@@ -83,7 +83,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                 ),
                 s.espacio(),
                 Container(
-                  margin: s.margenDerecho(context),
+
                   child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControlado.png"),
                 ),
                 s.espacio(),
@@ -162,13 +162,17 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                 s.espacio(),
                 s.espacio(),
                 Container(
-                  margin: s.margenIzquierdo(context),
+                  margin: s.margenNormal(context),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Expanded(child: Container()),
                       Container(
-                        width: MediaQuery.of(context).size.width*0.5,
-                        child: Image.asset("assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png"),
+                        width: MediaQuery.of(context).size.width*0.6,
+                        margin: s.margenNormal(context),
+                        child: Image.asset(
+                            "assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png",
+                        ),
                       ),
                     ],
                   ),

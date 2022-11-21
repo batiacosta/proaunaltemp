@@ -207,7 +207,7 @@ class _ETObesidadState extends State<ETObesidad> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -221,7 +221,7 @@ class _ETObesidadState extends State<ETObesidad> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -238,7 +238,7 @@ class _ETObesidadState extends State<ETObesidad> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

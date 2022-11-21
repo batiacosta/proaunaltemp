@@ -78,7 +78,7 @@ class _ETObstetriciaState extends State<ETObstetricia> {
             width: double.infinity,
             margin: s.margenNormal(context),
             child: Container(
-              padding: s.margenNormalEspaciadd(context),
+              padding: s.margenNormalEspaciado(context),
               decoration: BoxDecoration(
                 color: c.white,
                 borderRadius: BorderRadius.all(Radius.circular(s.radiousValue))
@@ -205,7 +205,7 @@ class _ETObstetriciaState extends State<ETObstetricia> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -219,7 +219,7 @@ class _ETObstetriciaState extends State<ETObstetricia> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -236,7 +236,7 @@ class _ETObstetriciaState extends State<ETObstetricia> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

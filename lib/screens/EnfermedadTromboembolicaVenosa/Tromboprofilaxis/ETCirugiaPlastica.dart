@@ -188,7 +188,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -202,7 +202,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -219,7 +219,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

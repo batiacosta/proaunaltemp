@@ -8,7 +8,7 @@ import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_menu.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_menu.dart';
-import 'package:acin/screens/InfeccionTractoUrinario/infeccion_tractu_urinario_menu.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/infeccion_tractu_urinario_menu.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/MenejoDolorPosoperatorio.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/neumonia_adquirida_en_comunidad.dart';
 import 'package:acin/screens/ProfilaxisQuirurgica/profilaxis_quirurgica_menu.dart';
@@ -63,7 +63,7 @@ class _DolorLeveState extends State<DolorLeve> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -78,27 +78,18 @@ class _DolorLeveState extends State<DolorLeve> {
                   child: Row(
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width*0.55,
+                        width: MediaQuery.of(context).size.width*0.7,
                         child: Column(
                           children: [
                             Image.asset("assets/MenejoDolorPosoperatorio/dLeve2.png"),
                           ],
                         ),
                       ),
-                      Container(
-                        width: MediaQuery.of(context).size.width*0.2,
-                        child: Column(
-                          children: [
-                            Image.asset("assets/MenejoDolorPosoperatorio/1.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/2.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/3.png", height: 40),
-                          ],
-                        ),
-                      ),
-                      Expanded(child:
+                      Expanded(child: Container()),
+                      Container(child:
                         InkWell(
-                          child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                          child: Image.asset("assets/ReferenciasBoton.png",width: MediaQuery.of(context).size.width*0.1),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1ZfnfhzzvVsABdN07UIAYW0dDJ0LUegrg/view?usp=share_link"),
                         ),
                       ),
                     ],

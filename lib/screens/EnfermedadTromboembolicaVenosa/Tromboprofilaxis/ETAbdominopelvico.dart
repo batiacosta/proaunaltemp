@@ -224,7 +224,7 @@ class _ETAbdominopelvicoState extends State<ETAbdominopelvico> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -238,7 +238,7 @@ class _ETAbdominopelvicoState extends State<ETAbdominopelvico> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -255,7 +255,7 @@ class _ETAbdominopelvicoState extends State<ETAbdominopelvico> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

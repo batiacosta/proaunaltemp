@@ -58,7 +58,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -75,7 +75,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                       Container(
                         child: InkWell(
                           child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1ZfnfhzzvVsABdN07UIAYW0dDJ0LUegrg/view?usp=share_link"),
                         ),
                       )
                     ],
@@ -83,7 +83,6 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                 ),
                 s.espacio(),
                 Container(
-                  margin: s.margenDerecho(context),
                   child: Image.asset("assets/MenejoDolorPosoperatorio/enfoqueSistematico.png"),
                 ),
                 s.espacio(),
@@ -100,7 +99,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                             child: Text("• ", style: s.regular(context, c.black),),
                           ),
                           Expanded(
-                            child: Text("Registrar en HOSVITAL y en las notas de evolución la escala numérica (ej: 5/10).",
+                            child: Text("Registrar en HOSVITAL y en las notas de evolución clínica la escala numérica de intensidad del dolor(ej: 5/10).",
                               style: s.regular(context, c.black),textAlign: TextAlign.justify,),
                           )
                         ],
@@ -190,7 +189,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                             child: Text("- ", style: s.regular(context, c.black),),
                           ),
                           Expanded(
-                            child: Text(" Depresión respiratoria", style: s.regular(context, c.black),),
+                            child: Text("Depresión respiratoria", style: s.regular(context, c.black),),
                           )
                         ],
                       ),

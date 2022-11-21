@@ -144,6 +144,10 @@ flutter:
     - assets/InfeccionTractoUrinario/tractoUrinario_b2.png
     - assets/InfeccionTractoUrinario/urinarioTabla1.png
     - assets/InfeccionTractoUrinario/urinarioTabla2.png
+    - assets/InfeccionTractoUrinario/InfeccionComplicada.png
+    - assets/InfeccionTractoUrinario/InfeccionNoComplicada.png
+    - assets/InfeccionTractoUrinario/CistitisComplicadaTabla.png
+    - assets/InfeccionTractoUrinario/PielonefritisComplicadaTabla.png
 
     - assets/InfeccionPielTejidosBlandos/tejidosTitulo.png
     - assets/InfeccionPielTejidosBlandos/tejidos_b1.png

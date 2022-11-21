@@ -188,7 +188,7 @@ class _ETOtorrinolaringologiaState extends State<ETOtorrinolaringologia> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -202,7 +202,7 @@ class _ETOtorrinolaringologiaState extends State<ETOtorrinolaringologia> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -219,7 +219,7 @@ class _ETOtorrinolaringologiaState extends State<ETOtorrinolaringologia> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

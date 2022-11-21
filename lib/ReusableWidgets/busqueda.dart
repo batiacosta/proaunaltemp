@@ -22,10 +22,10 @@ import 'package:acin/screens/InfeccionPielTejidosBlandos/impetigo.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/piomiositis.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_blandos_manejo_ambulatorio.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_menu.dart';
-import 'package:acin/screens/InfeccionTractoUrinario/infeccion_tractu_urinario_menu.dart';
-import 'package:acin/screens/InfeccionTractoUrinario/tracto_urinario_diagnostico.dart';
-import 'package:acin/screens/InfeccionTractoUrinario/tracto_urinario_tratamiento_cistitis.dart';
-import 'package:acin/screens/InfeccionTractoUrinario/tracto_urinario_tratamiento_pielonefritis.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/infeccion_tractu_urinario_menu.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/tracto_urinario_diagnostico.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/tracto_urinario_tratamiento_cistitis.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/tracto_urinario_tratamiento_pielonefritis.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/CRB65.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/CURB65.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/antigeno_unitario_NAC_diagnostico.dart';
@@ -734,7 +734,7 @@ class Busqueda extends SearchDelegate<String>{
             ListTile(
               onTap: (){
                 Navigator.push(context, new MaterialPageRoute(
-                    builder: (BuildContext context) => new InfeccionTractoUrinarioMenu()));
+                    builder: (BuildContext context) => new InfeccionTractoUrinarioNocomplicadaMenu()));
               },
               title: Text('Infección del tracto urinario'),
               leading: Image.asset('assets/m2.png'),

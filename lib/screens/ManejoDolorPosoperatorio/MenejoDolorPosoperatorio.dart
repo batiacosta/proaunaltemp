@@ -11,6 +11,7 @@ import 'package:acin/screens/ManejoDolorPosoperatorio/DolorModerado.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/DolorNoControlado.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/DolorSevero.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/EnfoqueSistematico.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/SinDolor.dart';
 import 'package:acin/screens/mainMenu.dart';
 import 'package:flutter/material.dart';
 
@@ -35,6 +36,7 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
         debugShowCheckedModeBanner: false,
         routes: {
           "/MainMenu":(BuildContext context)=>MainMenu(),
+          "/SinDolor":(BuildContext context)=>SinDolor(),
           "/DolorLeve":(BuildContext context)=>DolorLeve(),
           "/DolorModerado":(BuildContext context)=>DolorModerado(),
           "/DolorSevero":(BuildContext context)=>DolorSevero(),
@@ -65,7 +67,7 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             margin: s.margenNormal(context),
@@ -95,11 +97,7 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
                           style: s.regularBold(context, c.black),
                         ),
                         TextSpan(
-                          text: "de su ",
-                          style: s.regular(context, c.black),
-                        ),
-                        TextSpan(
-                          text: "dolor en este momento.",
+                          text: "del dolor.",
                           style: s.regularBold(context, c.black),
                         ),
                       ]
@@ -107,199 +105,43 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
                   )
                 ),
                 s.espacio(),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.65,
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/dLeve1.png"),
-                                  onTap: ()=> {},
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.17,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/0.png",height: 35),
-                                  onTap: ()=> {},
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.65,
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/dLeve2.png"),
-                                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.17,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/1.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/2.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/3.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.65,
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/dModerado1.png"),
-                                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/dModerado2.png"),
-                                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.17,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/4.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/5.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/6.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/7.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.65,
-                            child: Column(
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/dSevero1.png"),
-                                  onTap: ()=>_moveToPage(context, "/DolorSevero"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/dSevero2.png"),
-                                  onTap: ()=>_moveToPage(context, "/DolorSevero"),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            width: MediaQuery.of(context).size.width*0.17,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/8.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorSevero"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/9.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorSevero"),
-                                ),
-                                InkWell(
-                                  child: Image.asset("assets/MenejoDolorPosoperatorio/10.png",height: 35),
-                                  onTap: ()=>_moveToPage(context, "/DolorSevero"),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
+                InkWell(
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dLeve1.png"),
+                  onTap: ()=> _moveToPage(context, "/SinDolor"),
                 ),
                 s.espacio(),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Row(
-                    children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width*0.8,
-                        child: InkWell(
-                          child: Image.asset("assets/MenejoDolorPosoperatorio/enfoqueSistematico.png"),
-                          onTap: ()=>_moveToPage(context, "/EnfoqueSistematico"),
-                        ),
-                      ),
-                      Container()
-                    ],
-                  ),
+                InkWell(
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dLeve2.png"),
+                  onTap: ()=>_moveToPage(context, "/DolorLeve"),
                 ),
                 s.espacio(),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Row(
-                    children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width*0.8,
-                        child: InkWell(
-                          child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControlado.png"),
-                          onTap: ()=>_moveToPage(context, "/DolorNoControlado"),
-                        ),
-                      ),
-                      Container()
-                    ],
-                  ),
+                InkWell(
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dModerado1.png"),
+                  onTap: ()=>_moveToPage(context, "/DolorModerado"),
+                ),
+                s.espacio(),
+                InkWell(
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dSevero1.png"),
+                  onTap: ()=>_moveToPage(context, "/DolorSevero"),
+                ),
+
+                s.espacio(),
+                s.espacio(),s.espacio(),
+
+                InkWell(
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/enfoqueSistematico.png"),
+                  onTap: ()=>_moveToPage(context, "/EnfoqueSistematico"),
+                ),
+                s.espacio(),
+                InkWell(
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControlado.png"),
+                  onTap: ()=>_moveToPage(context, "/DolorNoControlado"),
                 ),
                 Volver(2, "/MainMenu"),
                 Container(height: MediaQuery.of(context).size.height*0.05,),
               ],
             ),
           ),
-
         ],
       ),
     );

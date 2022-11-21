@@ -464,6 +464,11 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
               ],
             ),
           ),
+          Container(
+            width: double.infinity,
+            margin: s.margenNormal(context),
+            child: Volver(1, "${widget.atrasRoute}"),
+          ),
 
         ],
       ),

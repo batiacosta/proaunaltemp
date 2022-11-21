@@ -168,15 +168,19 @@ class _BibliografiaState extends State<Bibliografia> {
         ),
         bibliografiaContent(
             context,
-            'Global guidelines for the prevention of surgical site infection, second edition. Geneva: World Health Organization. 2018.\n'
+            'Álvarez-Moreno CA, Reyes P, Remolina SA, Nocua-Báez LC, Valderrama MC, Guevara OA, et al. Guía de práctica clínica para la Profilaxis quirúrgica antimicrobiana. Infectio 2022; 26(3): 238-249.\n'
         ),
         bibliografiaContent(
             context,
-            'Berríos-Torres SI, Umscheid CA, Bratzler DW, Leas B, Stone EC, Kelz RR, Reinke CE, et al; Healthcare Infection Control Practices Advisory Committee. Centers for Disease Control and Prevention Guideline for the Prevention of Surgical Site Infection, 2017. JAMA Surg. 2017;152(8):784-791.\n'
+            'National institute for Health and Care Excellence. Urinary tract infection (catheter- associated): antimicrobial prescribing NG113. 2018. Available: https://www.nice.org.uk/guidance/ng113.\n'
         ),
         bibliografiaContent(
             context,
-            'Brocard E, Reveiz L, Régnaux JP, Abdala V, Ramón-Pardo P, Del Rio Bueno A. Antibiotic prophylaxis for surgical procedures: a scoping review. Rev Panam Salud Publica. 2021 May 26;45:e62\n'
+            'National institute for Health and Care Excellence. Urinary tract infection (lower): antimicrobial prescribing NG109. 2018 Available: https://www.nice.org.uk/guidance/ng109\n'
+        ),
+        bibliografiaContent(
+            context,
+            'National institute for Health and Care Excellence. Pyelonephritis (acute): antimicrobial prescribing NG111. 2018 Available: https://www.nice.org.uk/guidance/ng111\n'
         ),
       ],
     );

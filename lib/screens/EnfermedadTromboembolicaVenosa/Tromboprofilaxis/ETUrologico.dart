@@ -78,7 +78,7 @@ class _ETUrologicoState extends State<ETUrologico> {
             width: double.infinity,
             margin: s.margenNormal(context),
             child: Container(
-              padding: s.margenNormalEspaciadd(context),
+              padding: s.margenNormalEspaciado(context),
               decoration: BoxDecoration(
                 color: c.white,
                 borderRadius: BorderRadius.all(Radius.circular(s.radiousValue))
@@ -222,7 +222,7 @@ class _ETUrologicoState extends State<ETUrologico> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -236,7 +236,7 @@ class _ETUrologicoState extends State<ETUrologico> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -253,7 +253,7 @@ class _ETUrologicoState extends State<ETUrologico> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

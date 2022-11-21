@@ -102,6 +102,13 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Volver(2, "/MainMenu"),
+                Text(
+                  'Importancia de la tromboprevención.',
+                  textAlign: TextAlign.center,
+                  style: s.h1Bold(context, c.enfermedadTromboembolicaVenosaRojoCabecera,
+                  ),
+                ),
+                s.espacio(),
                 RichText(
                   textAlign: TextAlign.left,
                     text: TextSpan(
@@ -186,12 +193,13 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                             style: s.regularBold(context, c.enfermedadTromboembolicaVenosaRojoCabecera)
                         ),
                         TextSpan(
-                            text: ", generando costos a paciente y sus familias.",
+                            text: ", genera costos al paciente y su familia.",
                             style: s.regular(context, c.black)
                         ),
                       ]
                   ),
                 ),
+                s.espacio(),
                 Row(
                   children: [
                     Expanded(child: Container()),
@@ -208,6 +216,8 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                     ),
                   ],
                 ),
+                s.espacio(),
+                s.espacio(),
                 s.espacio(),
                 Text(
                     'MANEJO INTEGRAL DE LA TROMBO PREVENCIÓN',
@@ -422,7 +432,7 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                           children: [
                             TextSpan(
                                 text: "Informar a paciente y familiares: ",
-                                style: s.regularBold(context, c.black)
+                                style: s.regular(context, c.black)
                             ),
                             TextSpan(
                                 text: "Razón por la que se les realiza una evaluación de riesgo de TEV y hemorragia. ",
@@ -533,7 +543,7 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               colorText: c.black,
               text: 'Definir la duración de profilaxis.',
             ),
-            BulletPointBold(
+            BulletPointRegular(
               color: c.enfermedadTromboembolicaVenosaRojo,
               colorText: c.enfermedadTromboembolicaVenosaRojo,
               text: 'Educación del paciente/familia:',
