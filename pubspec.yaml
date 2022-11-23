@@ -91,7 +91,10 @@ flutter:
     - assets/m3.png
     - assets/m4.png
     - assets/m5.png
+    - assets/m6.png
     - assets/m7.png
+    - assets/NoComplicadaM.png
+    - assets/ComplicadaM.png
     - assets/EncabezadoMenu.png
     - assets/logoApp.png
     - assets/b1.png

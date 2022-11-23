@@ -37,10 +37,22 @@ import 'package:acin/screens/InfeccionPielTejidosBlandos/impetigo.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/piomiositis.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_blandos_manejo_ambulatorio.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_menu.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioComplicada/DiagnosticoITUComplicada.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioComplicada/ITUComplicadaMenu.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioComplicada/TratamientoCistitiscomplicada.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioComplicada/TratamientoPielonefritiscomplicada.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioMenu.dart';
 import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/infeccion_tractu_urinario_menu.dart';
 import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/tracto_urinario_diagnostico.dart';
 import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/tracto_urinario_tratamiento_cistitis.dart';
 import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/tracto_urinario_tratamiento_pielonefritis.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/DolorLeve.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/DolorModerado.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/DolorNoControlado.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/DolorSevero.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/EnfoqueSistematico.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/MenejoDolorPosoperatorio.dart';
+import 'package:acin/screens/ManejoDolorPosoperatorio/SinDolor.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/CRB65.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/CURB65.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/antigeno_unitario_NAC_diagnostico.dart';
@@ -391,6 +403,31 @@ class Busqueda extends SearchDelegate<String>{
     'Artroscopia','artroscopia','Artroplastica','artroplastica','Reemplazo de cadera','reemplazo de cadera','Reemplazo de rodilla','reemplazo de rodilla',
 
     'Anticoagulación en trauma','anticoagulación en trauma','Cirugía traumatológica','cirugía traumatológica','Trauma','trauma',
+
+
+
+    'Infección del tracto urinario no complicada','infección del tracto urinario no complicada',
+
+    'Infección del tracto urinario complicada','infección del tracto urinario complicada',
+
+    'Diagnóstico cistitis complicada','diagnóstico cistitis complicada','Cistitis complicada diagnostico','cistitis complicada diagnostico',
+
+    'Diagnostico pielonefritis complicada','diagnostico pielonefritis complicada','Pielonefritis complicada diagnostico','pielonefritis complicada diagnostico',
+
+    'Tratamiento cistitis complicada','tratamiento cistitis complicada','Cistitis complicada tratamiento','cistitis complicada tratamiento',
+
+    'Tratamiento pielonefritis complicada','tratamiento pielonefritis complicada','Pielonefritis complicada tratamiento','pielonefritis complicada tratamiento',
+
+    'Dolor leve','dolor leve',
+    'Dolor moderado','dolor moderado',
+    'Dolor no controlado','dolor no controlado','Equipo multidisciplinario','equipo multidisciplinario',
+    'Dolor severo','dolor severo',
+    'Analgesia multimodal','analgesia multimodal',
+    'Dolor posoperatorio','dolor posoperatorio',
+    'Sin dolor','sin dolor',
+
+
+
   ];
   final suggestions=[''];
 
@@ -791,7 +828,7 @@ class Busqueda extends SearchDelegate<String>{
             ListTile(
               onTap: (){
                 Navigator.push(context, new MaterialPageRoute(
-                    builder: (BuildContext context) => new InfeccionTractoUrinarioNocomplicadaMenu()));
+                    builder: (BuildContext context) => new InfeccionTractoUrinario()));
               },
               title: Text('Infección del tracto urinario'),
               leading: Image.asset('assets/m2.png'),
@@ -817,7 +854,7 @@ class Busqueda extends SearchDelegate<String>{
                     builder: (BuildContext context) => new TractoUrinarioDiagnosticoCistitis()));
               },
               title: Text('Diagnóstico cistitis no complicada'),
-              leading: Image.asset('assets/m2.png'),
+              leading: Image.asset('assets/NoComplicadaM.png'),
             )
           ],
         ),
@@ -840,7 +877,7 @@ class Busqueda extends SearchDelegate<String>{
                     builder: (BuildContext context) => new TractoUrinarioDiagnosticoCistitis()));
               },
               title: Text('Diagnóstico pielonefritis no complicada'),
-              leading: Image.asset('assets/m2.png'),
+              leading: Image.asset('assets/NoComplicadaM.png'),
             )
           ],
         ),
@@ -863,7 +900,7 @@ class Busqueda extends SearchDelegate<String>{
                     builder: (BuildContext context) => new TractoUrinarioTratamientoCistitis()));
               },
               title: Text('Tratamiento cistitis no complicada'),
-              leading: Image.asset('assets/m2.png'),
+              leading: Image.asset('assets/NoComplicadaM.png'),
             )
           ],
         ),
@@ -886,7 +923,7 @@ class Busqueda extends SearchDelegate<String>{
                     builder: (BuildContext context) => new TractoUrinarioTratamientoPielonefritis()));
               },
               title: Text('Tratamiento pielonefritis no complicada'),
-              leading: Image.asset('assets/m2.png'),
+              leading: Image.asset('assets/NoComplicadaM.png'),
             )
           ],
         ),
@@ -2440,6 +2477,267 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Traumatología'),
               leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    //    *******   ITU Complicada    *********
+
+    if(    query== 'Infección del tracto urinario no complicada'
+        || query == 'infección del tracto urinario no complicada'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new InfeccionTractoUrinarioNocomplicadaMenu()));
+              },
+              title: Text('Infección del tracto urinario no complicada'),
+              leading: Image.asset('assets/NoComplicadaM.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Infección del tracto urinario complicada'
+        || query == 'infección del tracto urinario complicada'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new InfeccionTractoUrinarioComplicadaMenu()));
+              },
+              title: Text('Infección del tracto urinario complicada'),
+              leading: Image.asset('assets/NoComplicadaM.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Diagnóstico cistitis complicada'
+    || query == 'diagnóstico cistitis complicada'
+    || query == 'Cistitis complicada diagnostico'
+    || query == 'cistitis complicada diagnostico'
+        || query == 'Diagnostico pielonefritis complicada'
+        || query == 'diagnostico pielonefritis complicada'
+        || query == 'Pielonefritis complicada diagnostico'
+        || query == 'pielonefritis complicada diagnostico'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new DiagnosticoITUComplicada()));
+              },
+              title: Text('Diagnóstico Infección Tracto Urinario (ITU) complicada'),
+              leading: Image.asset('assets/ComplicadaM.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Tratamiento cistitis complicada'
+        || query == 'tratamiento cistitis complicada'
+        || query == 'Cistitis complicada tratamiento'
+        || query == 'cistitis complicada tratamiento'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new TratamientoCistitisComplicada()));
+              },
+              title: Text('Tratamiento cistitis complicada'),
+              leading: Image.asset('assets/ComplicadaM.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Tratamiento pielonefritis complicada'
+        || query == 'tratamiento pielonefritis complicada'
+        || query == 'Pielonefritis complicada tratamiento'
+        || query == 'pielonefritis complicada tratamiento'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new TratamientoPielonefritiscomplicada()));
+              },
+              title: Text('Tratamiento pielonefritis complicada'),
+              leading: Image.asset('assets/ComplicadaM.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    //  *******   Tratamiento de dolor  **********
+
+    if(    query== 'Dolor leve' || query == 'dolor leve'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new DolorLeve()));
+              },
+              title: Text('Dolor leve'),
+              leading: Image.asset('assets/m6.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+    if(    query== 'Dolor moderado' || query == 'dolor moderado'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new DolorModerado()));
+              },
+              title: Text('Dolor moderado'),
+              leading: Image.asset('assets/m6.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+    
+    if(    query== 'Dolor no controlado'
+        || query == 'dolor no controlado'
+        || query == 'Equipo multidisciplinario'
+    || query == 'equipo multidisciplinario'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new DolorNoControlado()));
+              },
+              title: Text('Dolor no controlado, equipo multidisciplinario'),
+              leading: Image.asset('assets/m6.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+    
+    if(    query== 'Analgesia multimodal' || query == 'analgesia multimodal'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new EnfoqueSistematico()));
+              },
+              title: Text('Analgesia multimodal'),
+              leading: Image.asset('assets/m6.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Dolor severo' || query == 'dolor severo'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new DolorSevero()));
+              },
+              title: Text('Dolor severo'),
+              leading: Image.asset('assets/m6.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Dolor posoperatorio' || query == 'dolor posoperatorio'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ManejoDolorPosoperatorio()));
+              },
+              title: Text('Manejo del dolor posoperatorio'),
+              leading: Image.asset('assets/m6.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Sin dolor' || query == 'sin dolor'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new SinDolor()));
+              },
+              title: Text('Sin dolor'),
+              leading: Image.asset('assets/m6.png'),
             )
           ],
         ),
