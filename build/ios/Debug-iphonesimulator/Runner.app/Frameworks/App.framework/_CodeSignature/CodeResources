@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		Oi0C+cScuMiX3osX9W5sImETp4M=
+		pswnfazxVlO9uqRXEybenMtXrfA=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -330,11 +330,11 @@
 		</data>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/DolorLeve/Paso1.png</key>
 		<data>
-		Q2dX9aLQEBB6TY+uEC5ZPxsPWzo=
+		1q4cvz2eqvgzKIAxO/yHujbeKZk=
 		</data>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/DolorModerado/Paso1.png</key>
 		<data>
-		TnicsIyuV4/rijXLsQHC+5XRP4k=
+		xzl1O2vKRRBI9A/kzMHIVIpCjpE=
 		</data>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/DolorSevero/Paso1.png</key>
 		<data>
-		vsgYKIxc1RjCL++UsCnt26Yxgok=
+		T8qMYgmtzUxc02Deoe1sZ9qJfAM=
 		</data>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/EnfoqueSistematico/AnalgesiaMultimodal.png</key>
 		<data>
@@ -384,9 +384,13 @@
 		<data>
 		3hdbZKpP3S8PcKhTSuNIi/scNBE=
 		</data>
+		<key>flutter_assets/assets/MenejoDolorPosoperatorio/dolorNoControladoT.png</key>
+		<data>
+		Hp5VKP4rrDEifxmRmTCkSq6/Myk=
+		</data>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/enfoqueSistematico.png</key>
 		<data>
-		URRmCri2663Yoez0ewkRzcrzBKE=
+		r3gDfPFxGTTL9n/D3fv1J2AtaPg=
 		</data>
 		<key>flutter_assets/assets/NeumoniaAdquiridaEnComunidad/CRB65B.png</key>
 		<data>
@@ -646,7 +650,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		zkGH5dvCAN3EyCqdYwI/hYyJIHk=
+		0AVruriiRWP3VVLnEAjBQDrF3HQ=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -663,7 +667,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DAWnQisZzKhv7tXPRV+i9KTm0lVYzFdh4THcgwPFvGY=
+			vYcbfi7vp3lNLNuALpdzpbY1aai4Jj8yhb1qX5xJiek=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -1223,14 +1227,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H/5n2/3ieATrudFg0M0x2KsmoZljh7fDrXV158/cOtk=
+			pbetahxfOchTeAV3kLSyu3w5h0Suv6OHbyGBWHlxL2I=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/DolorModerado/Paso1.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QNZVg/CGDDS7fjnSc0Xa/Xsz6kkcVq17oymM+Nr0HSY=
+			3JqNdkZX+ihsOqQukQ3kpn9BMV6RxP4a01OH+uqt9PQ=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png</key>
@@ -1251,7 +1255,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fjHLPfz4S3HYFICUSMq4MOj+3s8Bftr4TarA8y0kLpY=
+			IwteIvzHDile6voNml1bOACkvaVtoYJmqi/kOJzPiyY=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/EnfoqueSistematico/AnalgesiaMultimodal.png</key>
@@ -1317,11 +1321,18 @@
 			KP44IGhLVmX1rrm4TDmHdNCWfUNBOh2u/jyQqoRmxv4=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/MenejoDolorPosoperatorio/dolorNoControladoT.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iVZUwC8OATUFyK9Oi9ulP8gpuoWQIRpAsncvq2QO8nc=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/MenejoDolorPosoperatorio/enfoqueSistematico.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TFaPtZAEQfYwQBr5LkThJoPR+8GrApeHoUGUTqyRo7I=
+			AFNzXDvNNfVfCGwEhaWl02ImA9SxPRmgmgB0M5eqrVM=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/NeumoniaAdquiridaEnComunidad/CRB65B.png</key>
@@ -1776,7 +1787,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tdhymflTjqLkBg5vW1j2MURqiUDN4Ar7gE2nXOd1Bz4=
+			mRPL0TXvPHLRJOEwp5UXkoKHuHWGFFXi+YRIuOxQVEU=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

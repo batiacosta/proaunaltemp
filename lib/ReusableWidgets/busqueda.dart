@@ -1,9 +1,24 @@
 
 import 'dart:ffi';
 
+import 'package:acin/ReusableWidgets/Caprini.dart';
 import 'package:acin/ReusableWidgets/barraInferior.dart';
 import 'package:acin/ReusableWidgets/barraSuperior.dart';
 import 'package:acin/ReusableWidgets/manipularImagen.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/EnfermedadTromboembolicaVenosa.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/CalculadoraCaprini.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ContraindicacionesMecanica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETAbdominopelvico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCardiovascular.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCirugiaPlastica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETNeurologica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObesidad.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOrtopedia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETToracica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETTraumatologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETUrologico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/FactoresRiesgoSangrado.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/Tromboprofilaxis.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_apendicitis.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_colecistitis.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_cultivo.dart';
@@ -334,6 +349,48 @@ class Busqueda extends SearchDelegate<String>{
     'urológica, cirugía',
     'vascular periferica, cirugía',
     'virus de la influenza, detección neumonía adquirida en la comunidad',
+
+    //**** Enfermedad tromboembólica venosa ****
+    'Prehospitalaria','prehospitalaria',
+    'Incidencia','incidencia',
+    'Intrahospitalaria','intrahospitalaria',
+    'Alta hospitalaria','alta hospitalaria',
+    'Consideraciones generales tromboprevención','consideraciones generales tromboprevención',
+    'Enfermedad tromboembólica','enfermedad tromboembólica',
+
+    'Tipo de procedimientos quirúrgicos','tipo de procedimientos quirúrgicos',
+    'Especialidades quirúrgicas','especialidades quirúrgicas',
+
+    'Cirugía abdominopélvica','cirugía abdominopélvica', 'Cirugía ginecológica tromboprevención','cirugía ginecológica tromboprevención', 'Cirugía intraabdominal','cirugía intraabdominal'
+    , 'Riesgo de evento tromboembólico en cirugía','riesgo de evento tromboembólico en cirugía','Anticoagulación en cirugía abdominopélvica','anticoagulación en cirugía abdominopélvica',
+
+    'Calculadora Caprini','calculadora Caprini','Calculadora riesgo tromboembólico'
+    ,'calculadora riesgo tromboembólico','Riesgo de enfermedad tromboembólica','riesgo de enfermedad tromboembólica',
+
+    'Riesgo de sangrado posoperatorio','riesgo de sangrado posoperatorio'
+    ,'Riesgo de hemorragia posterior procedimiento','riesgo de hemorragia posterior procedimiento',
+
+    'Contraindicaciones de compresión mecánica','contraindicaciones de compresión mecánica','Cuando no usar medidas mecánicas','cuando no usar medidas mecánicas',
+
+    'Obesidad','obesidad','Cirugía en sobrepeso','cirugía en sobrepeso','Cirugía bariática','cirugía bariática',
+
+    'Urología','urología', 'Cirugía genitourinaria','cirugía genitourinaria', 'Cirugía piso pélvico','cirugía piso pélvico', 'Prostatectomía','prostatectomía', 'Resección transuretral','resección transuretral', 'Vasectomía','vasectomía', 'Nefrectomía','nefrectomía',
+
+    'Cirugía plástica estética','cirugía plástica estética','Lifectomía','lifectomía','Abdominoplastia','abdominoplastia','Mamoplastia','mamoplastia','Cirugía reconstructiva','cirugía reconstructiva',
+
+    'Cirugía cabeza y cuello','cirugía cabeza y cuello','Otorrinolaringología','otorrinolaringología','Otología','otología','Tiroidectomía','tiroidectomía','Tonsilectomía','tonsilectomía','Otología','otología',
+
+    'Valvuloplastia','valvuloplastia', 'Cirugía revascularización','cirugía revascularización', 'Cirugía vacular','cirugía vacular',
+
+    'Cirugía de grandes vasos','Cirugía de grandes vasos','Angiología','Angiología','Safectomía','Safectomía',
+
+    'Pleurodesis','pleurodesis','Toractomía','toractomía','Cirugía de tórax','cirugía de tórax','Toracoscopia','toracoscopia',
+
+    'Cirugía neurológica','cirugía neurológica','Cirugía de sistema nervioso central','cirugía de sistema nervioso central','Recomendaciones neurocirugía','recomendaciones neurocirugía','Cirugía cerebral','cirugía cerebral','Cirugía médula espinal','cirugía médula espinal',
+
+    'Artroscopia','artroscopia','Artroplastica','artroplastica','Reemplazo de cadera','reemplazo de cadera','Reemplazo de rodilla','reemplazo de rodilla',
+
+    'Anticoagulación en trauma','anticoagulación en trauma','Cirugía traumatológica','cirugía traumatológica','Trauma','trauma',
   ];
   final suggestions=[''];
 
@@ -1752,6 +1809,16 @@ class Busqueda extends SearchDelegate<String>{
     }
     if(    query=='Neurocirugía'
         || query=='neurocirugía'
+        || query == 'Cirugía neurológica'
+        || query == 'cirugía neurológica'
+        || query == 'Cirugía de sistema nervioso central'
+        || query == 'cirugía de sistema nervioso central'
+        || query == 'Recomendaciones neurocirugía'
+        || query == 'recomendaciones neurocirugía'
+        || query == 'Cirugía cerebral'
+        || query == 'cirugía cerebral'
+        || query == 'Cirugía médula espinal'
+        || query == 'cirugía médula espinal'
     ){
       return new Scaffold(
         body:Column(
@@ -1766,7 +1833,15 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Neurocirugía'),
               leading: Image.asset('assets/m5.png'),
-            )
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) =>  ETNeurologica()));
+              },
+              title: Text('Cirugía neurológica, tromboprevención'),
+              leading: Image.asset('assets/m7.png'),
+            ),
           ],
         ),
         bottomNavigationBar: BarraInferior(),
@@ -1790,6 +1865,14 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía Cardiaca'),
               leading: Image.asset('assets/m5.png'),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) =>  ETCardiovascular()));
+              },
+              title: Text('Cirugía cardiovascular, tromboprevención'),
+              leading: Image.asset('assets/m7.png'),
             )
           ],
         ),
@@ -1800,6 +1883,12 @@ class Busqueda extends SearchDelegate<String>{
         || query=='cirugía vascular periférica'
         || query=='Vascular periferica, cirugía'
         || query=='vascular periferica, cirugía'
+        || query=='Cirugía de grandes vasos'
+        || query=='cirugía de grandes vasos'
+        || query=='Angiología'
+        || query=='Angiología'
+        || query=='Safectomía'
+        || query=='Safectomía'
     ){
       return new Scaffold(
         body:Column(
@@ -1814,6 +1903,14 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía vascular periférica'),
               leading: Image.asset('assets/m5.png'),
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) =>  ETCardiovascular()));
+              },
+              title: Text('Cirugía vascular periférica, tromboprevención'),
+              leading: Image.asset('assets/m7.png'),
             )
           ],
         ),
@@ -1824,6 +1921,14 @@ class Busqueda extends SearchDelegate<String>{
         || query=='cirugía torácica'
         || query=='Torácica, cirugía'
         || query=='torácica, cirugía'
+        || query == 'Pleurodesis'
+        || query == 'pleurodesis'
+        || query == 'Toractomía'
+        || query == 'toractomía'
+        || query == 'Cirugía de tórax'
+        || query == 'cirugía de tórax'
+        || query == 'Toracoscopia'
+        || query == 'toracoscopia'
     ){
       return new Scaffold(
         body:Column(
@@ -1838,7 +1943,15 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía Torácica'),
               leading: Image.asset('assets/m5.png'),
-            )
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETToracica()));
+              },
+              title: Text('Cirugía Torácica, tromboprevención'),
+              leading: Image.asset('assets/m7.png'),
+            ),
           ],
         ),
         bottomNavigationBar: BarraInferior(),
@@ -1872,6 +1985,14 @@ class Busqueda extends SearchDelegate<String>{
         || query=='cirugía ortopédica'
         || query=='Ortopédica, cirugía'
         || query=='ortopédica, cirugía'
+        || query == 'Artroscopia'
+        || query == 'artroscopia'
+        || query == 'Artroplastica'
+        || query == 'artroplastica'
+        || query == 'Reemplazo de cadera'
+        || query == 'reemplazo de cadera'
+        || query == 'Reemplazo de rodilla'
+        || query == 'reemplazo de rodilla'
     ){
       return new Scaffold(
         body:Column(
@@ -1886,7 +2007,15 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía Ortopédica'),
               leading: Image.asset('assets/m5.png'),
-            )
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETOrtopedia()));
+              },
+              title: Text('Ortopedia, tromboprevención'),
+              leading: Image.asset('assets/m7.png'),
+            ),
           ],
         ),
         bottomNavigationBar: BarraInferior(),
@@ -1910,7 +2039,15 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía Urológica'),
               leading: Image.asset('assets/m5.png'),
-            )
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETUrologico()));
+              },
+              title: Text('Cirugía Urológica tromboprevención'),
+              leading: Image.asset('assets/m7.png'),
+            ),
           ],
         ),
         bottomNavigationBar: BarraInferior(),
@@ -1934,7 +2071,15 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía Ginecológica'),
               leading: Image.asset('assets/m5.png'),
-            )
+            ),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETAbdominopelvico()));
+              },
+              title: Text('Cirugía abdominopélvica / ginecológica'),
+              leading: Image.asset('assets/m7.png'),
+            ),
           ],
         ),
         bottomNavigationBar: BarraInferior(),
@@ -1958,6 +2103,343 @@ class Busqueda extends SearchDelegate<String>{
               },
               title: Text('Cirugía de mama'),
               leading: Image.asset('assets/m5.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    //  ************* Enfermedad tromboembólica venosa  ****************
+
+    if(    query== 'Prehospitalaria'
+        || query =='prehospitalaria'
+        || query == 'Incidencia'
+        || query =='incidencia'
+        || query == 'Intrahospitalaria'
+        || query =='intrahospitalaria'
+        || query == 'Alta hospitalaria'
+        || query =='alta hospitalaria'
+        || query == 'Consideraciones generales tromboprevención'
+        || query =='consideraciones generales tromboprevención'
+        || query == 'Enfermedad tromboembólica'
+        || query =='enfermedad tromboembólica'
+    ){
+      return new Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new EnfermedadTromboembolicaVenosa()));
+              },
+              title: Text('Enfermedad tromboembólica venosa'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+    if(    query== 'Tipo de procedimientos quirúrgicos'
+        || query == 'tipo de procedimientos quirúrgicos'
+        || query == 'Especialidades quirúrgicas'
+        || query == 'especialidades quirúrgicas'
+    ){
+      return new Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new Tromboprofilaxis()));
+              },
+              title: Text('Tromboprofilaxis'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+    if(    query== 'Cirugía abdominopélvica'
+        || query == 'cirugía abdominopélvica'
+        || query ==  'Cirugía ginecológica tromboprevención'
+        || query == 'cirugía ginecológica tromboprevención'
+        || query ==  'Cirugía intraabdominal'
+        || query == 'cirugía intraabdominal'
+        || query ==  'Riesgo de evento tromboembólico en cirugía'
+        || query == 'riesgo de evento tromboembólico en cirugía'
+        || query == 'Anticoagulación en cirugía abdominopélvica'
+        || query == 'anticoagulación en cirugía abdominopélvica'
+    ){
+      return new Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETAbdominopelvico()));
+              },
+              title: Text('Cirugía abdominopélvica / ginecológica'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+    if(    query== 'Calculadora Caprini'
+        || query == 'calculadora Caprini'
+        || query == 'Calculadora riesgo tromboembólico'
+        || query == 'calculadora riesgo tromboembólico'
+        || query == 'Riesgo de enfermedad tromboembólica'
+        || query == 'riesgo de enfermedad tromboembólica'
+    ){
+      return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          routes: {
+            "/MainMenu": (BuildContext context) => MainMenu(),
+          },
+      home: Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new CalculadoraCaprini(atrasRoute: '/MainMenu',)));
+              },
+              title: Text('Calculadora Caprini'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      )
+      );
+    }
+    if(    query== 'Riesgo de sangrado posoperatorio'
+        || query == 'riesgo de sangrado posoperatorio'
+        || query == 'Riesgo de hemorragia posterior procedimiento'
+        || query == 'riesgo de hemorragia posterior procedimiento'
+    ){
+      return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          routes: {
+            "/MainMenu": (BuildContext context) => MainMenu(),
+          },
+      home: Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new FactoresRiesgoSangrado(atrasRoute: '/MainMenu',)));
+              },
+              title: Text('Factores de riesgo de sangrado'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      )
+      );
+    }
+    if(    query== 'Contraindicaciones de compresión mecánica'
+        || query == 'contraindicaciones de compresión mecánica'
+        || query == 'Cuando no usar medidas mecánicas'
+        || query == 'cuando no usar medidas mecánicas'
+    ){
+      return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          routes: {
+            "/MainMenu": (BuildContext context) => MainMenu(),
+          },
+          home: Scaffold(
+            body:Column(
+              children: [
+                Container(height:30),
+                ListTile(
+                  onTap: (){
+                    Navigator.push(context, new MaterialPageRoute(
+                        builder: (BuildContext context) => new ContraindicacionesMecanica(atrasRoute: '/MainMenu',)));
+                  },
+                  title: Text('Contraindicaciones medidas mecánicas'),
+                  leading: Image.asset('assets/m7.png'),
+                )
+              ],
+            ),
+            bottomNavigationBar: BarraInferior(),
+          )
+      );
+    }
+
+    if(    query== 'Obesidad'
+        || query == 'obesidad'
+        || query == 'Cirugía en sobrepeso'
+        || query == 'cirugía en sobrepeso'
+        || query == 'Cirugía bariática'
+        || query == 'cirugía bariática'
+    ){
+      return Scaffold(
+            body:Column(
+              children: [
+                Container(height:30),
+                ListTile(
+                  onTap: (){
+                    Navigator.push(context, new MaterialPageRoute(
+                        builder: (BuildContext context) => new ETObesidad()));
+                  },
+                  title: Text('Obesidad'),
+                  leading: Image.asset('assets/m7.png'),
+                )
+              ],
+            ),
+            bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Urología'
+        || query == 'urología'
+        || query == 'Cirugía genitourinaria'
+        || query == 'cirugía genitourinaria'
+        || query == 'Cirugía piso pélvico'
+        || query == 'cirugía piso pélvico'
+        || query == 'Prostatectomía'
+        || query == 'prostatectomía'
+        || query == 'Resección transuretral'
+        || query == 'resección transuretral'
+        || query == 'Vasectomía'
+        || query == 'vasectomía'
+        || query == 'Nefrectomía'
+        || query == 'nefrectomía'
+    ){
+      return Scaffold(
+            body:Column(
+              children: [
+                Container(height:30),
+                ListTile(
+                  onTap: (){
+                    Navigator.push(context, new MaterialPageRoute(
+                        builder: (BuildContext context) => new ETUrologico()));
+                  },
+                  title: Text('Procedimientos urológicos'),
+                  leading: Image.asset('assets/m7.png'),
+                )
+              ],
+            ),
+            bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Cirugía plástica estética'
+        || query == 'cirugía plástica estética'
+        || query == 'Lifectomía'
+        || query == 'lifectomía'
+        || query == 'Abdominoplastia'
+        || query == 'abdominoplastia'
+        || query == 'Mamoplastia'
+        || query == 'mamoplastia'
+        || query == 'Cirugía reconstructiva'
+        || query == 'cirugía reconstructiva'
+    ){
+      return Scaffold(
+            body:Column(
+              children: [
+                Container(height:30),
+                ListTile(
+                  onTap: (){
+                    Navigator.push(context, new MaterialPageRoute(
+                        builder: (BuildContext context) => new ETCirugiaPlastica()));
+                  },
+                  title: Text('Cirugía plástica'),
+                  leading: Image.asset('assets/m7.png'),
+                )
+              ],
+            ),
+            bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Cirugía cabeza y cuello'
+        || query == 'cirugía cabeza y cuello'
+        || query == 'Otorrinolaringología'
+        || query == 'otorrinolaringología'
+        || query == 'Otología'
+        || query == 'otología'
+        || query == 'Tiroidectomía'
+        || query == 'tiroidectomía'
+        || query == 'Tonsilectomía'
+        || query == 'tonsilectomía'
+        || query == 'Otología'
+        || query == 'otología'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETCirugiaPlastica()));
+              },
+              title: Text('Otorrinolaringología'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Valvuloplastia'
+        || query == 'valvuloplastia'
+        || query == 'Cirugía revascularización'
+        || query == 'cirugía revascularización'
+        || query == 'Cirugía vacular'
+        || query == 'cirugía vacular'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETCardiovascular()));
+              },
+              title: Text('Cirugía cardiovascular'),
+              leading: Image.asset('assets/m7.png'),
+            )
+          ],
+        ),
+        bottomNavigationBar: BarraInferior(),
+      );
+    }
+
+    if(    query== 'Anticoagulación en trauma'
+        || query == 'anticoagulación en trauma'
+        || query == 'Cirugía traumatológica'
+        || query == 'cirugía traumatológica'
+        || query == 'Trauma'
+        || query == 'trauma'
+    ){
+      return Scaffold(
+        body:Column(
+          children: [
+            Container(height:30),
+            ListTile(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(
+                    builder: (BuildContext context) => new ETTraumatologia()));
+              },
+              title: Text('Traumatología'),
+              leading: Image.asset('assets/m7.png'),
             )
           ],
         ),

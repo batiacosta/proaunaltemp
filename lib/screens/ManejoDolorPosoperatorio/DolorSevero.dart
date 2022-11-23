@@ -99,7 +99,7 @@ class _DolorSeveroState extends State<DolorSevero> {
                   margin: s.margenNormal(context),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "Paso 1, 2 y 3",
+                    "Paso 1 + 2 + 3",
                     textAlign: TextAlign.left,
                     style: s.h1Regular(context, c.black),
                   ),

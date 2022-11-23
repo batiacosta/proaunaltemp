@@ -22,7 +22,9 @@ class _DolorModeradoState extends State<DolorModerado> {
   GeneralSettings s = new GeneralSettings();
   Color colorClaro;
   Color colorMedio;
-
+/*
+  Moderado
+   */
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;
@@ -100,7 +102,7 @@ class _DolorModeradoState extends State<DolorModerado> {
                   margin: s.margenNormal(context),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "Paso 1 y 2",
+                    "Paso 1 + 2",
                     textAlign: TextAlign.left,
                     style: s.h1Regular(context, c.black),
                   ),

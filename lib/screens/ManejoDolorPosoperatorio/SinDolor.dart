@@ -29,6 +29,10 @@ class _SinDolorState extends State<SinDolor> {
   Color colorClaro;
   Color colorMedio;
 
+  /*
+  Sin dolor
+   */
+
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;

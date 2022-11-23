@@ -3,7 +3,6 @@ import 'package:acin/ReusableWidgets/GenralSettings.dart';
 import 'package:acin/ReusableWidgets/barraInferior.dart';
 import 'package:acin/ReusableWidgets/barraSuperior.dart';
 import 'package:acin/ReusableWidgets/headers.dart';
-import 'package:acin/ReusableWidgets/imagenEncabezadoSeccion.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/MenejoDolorPosoperatorio.dart';
@@ -23,7 +22,9 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
   GeneralSettings s = new GeneralSettings();
   Color colorClaro;
   Color colorMedio;
-
+/*
+  Dolor no controlado, equipo multidisciplinario
+ */
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;
@@ -84,10 +85,11 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                 s.espacio(),
                 Container(
 
-                  child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControlado.png"),
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControladoT.png"),
                 ),
                 s.espacio(),
                 s.espacio(),
+                Text("Equipo multidisciplinario\n"), // Ponerlo dentro del campo del título.
                 Container(
                   width: MediaQuery.of(context).size.width,
                   margin: s.margenNormal(context),

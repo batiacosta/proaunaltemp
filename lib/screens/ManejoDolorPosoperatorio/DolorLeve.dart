@@ -28,7 +28,9 @@ class _DolorLeveState extends State<DolorLeve> {
   GeneralSettings s = new GeneralSettings();
   Color colorClaro;
   Color colorMedio;
-
+/*
+  Dolor leve
+   */
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;
@@ -137,7 +139,7 @@ class _DolorLeveState extends State<DolorLeve> {
                                 style: s.regular(context, c.dolorPosoperatorioRojoCabecera),
                               ),
                               TextSpan(
-                                text: "en pacientes mayores de 65 años, deshidratados, post-operatorios de anastomosis intestinal, con enfermedad coronaria y/o enfermedad renal.",
+                                text: "en pacientes > 65 años, deshidratados, post-operatorios de anastomosis intestinal, con enfermedad coronaria y/o enfermedad renal.",
                                 style: s.regular(context, c.black),
                               ),
                             ]

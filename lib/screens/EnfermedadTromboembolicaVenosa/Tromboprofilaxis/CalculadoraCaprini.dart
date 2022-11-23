@@ -15,8 +15,22 @@ import 'package:acin/ReusableWidgets/manipularImagen.dart';
 import 'package:acin/ReusableWidgets/manipularImagenCaprini.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/EnfermedadTromboembolicaVenosa.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ContraindicacionesMecanica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETAbdominopelvico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCardiovascular.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCirugiaPlastica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETNeurologica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObesidad.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObstetricia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOrtopedia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOtorrinolaringologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETToracica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETTraumatologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETUrologico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETVascularPeriferico.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/FactoresRiesgoSangrado.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/Tromboprofilaxis.dart';
 import 'package:acin/screens/mainMenu.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -60,15 +74,37 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
     colorClaro = c.enfermedadTromboembolicaVenosaBackground;
     colorMedio = c.enfermedadTromboembolicaVenosaRojoCabecera;
 
-    return new Scaffold(
-        drawer: MenuDesplegado(),
-        appBar: BarraSuperior().Barra(context, false),
-        bottomNavigationBar: BarraInferior(),
-        backgroundColor: c.tromboprofilaxisBackground,
-        resizeToAvoidBottomInset: false,
-        body: SafeArea(
-          child: cuerpo(context),
-        )
+    return new MaterialApp(
+      routes: {
+        "/MainMenu":(BuildContext context)=>MainMenu(),
+        "/Tromboprofilaxis":(BuildContext context)=>Tromboprofilaxis(),
+        "/EnfermedadTromboembolicaVenosa":(BuildContext context)=>EnfermedadTromboembolicaVenosa(),
+        "/ETAbdominopelvico":(BuildContext context)=>ETAbdominopelvico(),
+        "/ETObesidad":(BuildContext context)=>ETObesidad(),
+        "/ETUrologico":(BuildContext context)=>ETUrologico(),
+        "/ETCirugiaPlastica":(BuildContext context)=>ETCirugiaPlastica(),
+        "/ETOtorrinolaringologia":(BuildContext context)=>ETOtorrinolaringologia(),
+        "/ETCardiovascular":(BuildContext context)=>ETCardiovascular(),
+        "/ETVascularPeriferico":(BuildContext context)=>ETVascularPeriferico(),
+        "/ETToracica":(BuildContext context)=>ETToracica(),
+        "/ETObstetricia":(BuildContext context)=>ETObstetricia(),
+        "/ETNeurologica":(BuildContext context)=>ETNeurologica(),
+        "/ETOrtopedia":(BuildContext context)=>ETOrtopedia(),
+        "/ETTraumatologia":(BuildContext context)=>ETTraumatologia(),
+        "/FactoresRiesgoSangrado":(BuildContext context)=>FactoresRiesgoSangrado(),
+        "/CalculadoraCaprini":(BuildContext context)=>CalculadoraCaprini(),
+
+      },
+      home: Scaffold(
+          drawer: MenuDesplegado(),
+          appBar: BarraSuperior().Barra(context, false),
+          bottomNavigationBar: BarraInferior(),
+          backgroundColor: c.tromboprofilaxisBackground,
+          resizeToAvoidBottomInset: false,
+          body: SafeArea(
+            child: cuerpo(context),
+          )
+      ),
     );
   }
 
@@ -81,7 +117,7 @@ class _CalculadoraCapriniState extends State<CalculadoraCaprini> {
           Container(
             width: double.infinity,
             margin: s.margenNormal(context),
-            child: Volver(1, "${widget.atrasRoute}"),
+            child: Volver(1, "${widget.atrasRoute??'/MainMenu'}"),
           ),
           s.espacio(),
           Container(
