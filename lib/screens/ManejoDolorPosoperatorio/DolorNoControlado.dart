@@ -22,9 +22,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
   GeneralSettings s = new GeneralSettings();
   Color colorClaro;
   Color colorMedio;
-/*
-  Dolor no controlado, equipo multidisciplinario
- */
+
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;
@@ -76,7 +74,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                       Container(
                         child: InkWell(
                           child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1ZfnfhzzvVsABdN07UIAYW0dDJ0LUegrg/view?usp=share_link"),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1Fgpp4pbmIvBDrauQy8xmuBf7TfHhndaQ/view?usp=share_link"),
                         ),
                       )
                     ],
@@ -89,7 +87,6 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                 ),
                 s.espacio(),
                 s.espacio(),
-                Text("Equipo multidisciplinario\n"), // Ponerlo dentro del campo del título.
                 Container(
                   width: MediaQuery.of(context).size.width,
                   margin: s.margenNormal(context),
@@ -103,7 +100,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("1. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Analgesia controlada por el paciente (ACP), y /o", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Analgesia controlada por el paciente (ACP), y /o", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -115,7 +112,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("2. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Bloqueo nervioso, y/o", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Bloqueo nervioso, y/o", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -127,7 +124,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("3. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Neuromoduladores: ketamina, gabapentin, pregabalina, etc", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Neuromoduladores: ketamina, gabapentin, pregabalina, etc", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -139,7 +136,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("4. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Apoyo psicológico o psiquiátrico", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Apoyo psicológico o psiquiátrico", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -151,7 +148,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("5. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Terapia física y/o ocupacional", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Terapia física y/o ocupacional", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),

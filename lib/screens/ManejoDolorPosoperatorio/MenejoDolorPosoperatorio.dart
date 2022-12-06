@@ -28,10 +28,6 @@ class _ManejoDolorPosoperatorioState extends State<ManejoDolorPosoperatorio> {
   Color colorClaro;
   Color colorMedio;
 
-  /*
-  Dolor
-   */
-
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;

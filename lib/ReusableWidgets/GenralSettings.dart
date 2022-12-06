@@ -4,6 +4,8 @@ class GeneralSettings{
   String chulo = "✓";
   String triangulito = "➢";
   String rombo = "❖";
+  String punto = "•";
+  String guion = "-";
 
   double radiousValue = 10;
   margenNormal(context){

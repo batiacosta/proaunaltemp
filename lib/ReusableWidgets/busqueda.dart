@@ -363,18 +363,18 @@ class Busqueda extends SearchDelegate<String>{
     'virus de la influenza, detección neumonía adquirida en la comunidad',
 
     //**** Enfermedad tromboembólica venosa ****
-    'Prehospitalaria','prehospitalaria',
+    'Prehospitalaria, tromboprevención','prehospitalaria, tromboprevención',
     'Incidencia','incidencia',
-    'Intrahospitalaria','intrahospitalaria',
-    'Alta hospitalaria','alta hospitalaria',
+    'Intrahospitalaria, tromboprevención','intrahospitalaria, tromboprevención',
+    'Alta hospitalaria, tromboprevención','alta hospitalaria, tromboprevención','Tromboprevención','tromboprevención',
     'Consideraciones generales tromboprevención','consideraciones generales tromboprevención',
     'Enfermedad tromboembólica','enfermedad tromboembólica',
 
     'Tipo de procedimientos quirúrgicos','tipo de procedimientos quirúrgicos',
-    'Especialidades quirúrgicas','especialidades quirúrgicas',
+    'Especialidades quirúrgicas','especialidades quirúrgicas','Tromboprofilaxis','tromboprofilaxis',
 
     'Cirugía abdominopélvica','cirugía abdominopélvica', 'Cirugía ginecológica tromboprevención','cirugía ginecológica tromboprevención', 'Cirugía intraabdominal','cirugía intraabdominal'
-    , 'Riesgo de evento tromboembólico en cirugía','riesgo de evento tromboembólico en cirugía','Anticoagulación en cirugía abdominopélvica','anticoagulación en cirugía abdominopélvica',
+    , 'Riesgo de evento tromboembólico en cirugía','riesgo de evento tromboembólico en cirugía','Anticoagulación en cirugía abdominopélvica','anticoagulación en cirugía abdominopélvica','Abdominopélvica, cirugía','abdominopélvica, cirugía',
 
     'Calculadora Caprini','calculadora Caprini','Calculadora riesgo tromboembólico'
     ,'calculadora riesgo tromboembólico','Riesgo de enfermedad tromboembólica','riesgo de enfermedad tromboembólica',
@@ -384,9 +384,9 @@ class Busqueda extends SearchDelegate<String>{
 
     'Contraindicaciones de compresión mecánica','contraindicaciones de compresión mecánica','Cuando no usar medidas mecánicas','cuando no usar medidas mecánicas',
 
-    'Obesidad','obesidad','Cirugía en sobrepeso','cirugía en sobrepeso','Cirugía bariática','cirugía bariática',
+    'Obesidad, tromboprevención','obesidad, tromboprevención','Cirugía en sobrepeso','cirugía en sobrepeso','Cirugía bariática','cirugía bariática',
 
-    'Urología','urología', 'Cirugía genitourinaria','cirugía genitourinaria', 'Cirugía piso pélvico','cirugía piso pélvico', 'Prostatectomía','prostatectomía', 'Resección transuretral','resección transuretral', 'Vasectomía','vasectomía', 'Nefrectomía','nefrectomía',
+    'Cirugía genitourinaria','cirugía genitourinaria', 'Cirugía piso pélvico','cirugía piso pélvico', 'Prostatectomía','prostatectomía', 'Resección transuretral','resección transuretral', 'Vasectomía','vasectomía', 'Nefrectomía','nefrectomía',
 
     'Cirugía plástica estética','cirugía plástica estética','Lifectomía','lifectomía','Abdominoplastia','abdominoplastia','Mamoplastia','mamoplastia','Cirugía reconstructiva','cirugía reconstructiva',
 
@@ -2149,18 +2149,20 @@ class Busqueda extends SearchDelegate<String>{
 
     //  ************* Enfermedad tromboembólica venosa  ****************
 
-    if(    query== 'Prehospitalaria'
-        || query =='prehospitalaria'
+    if(    query== 'Prehospitalaria, tromboprevención'
+        || query =='prehospitalaria, tromboprevención'
         || query == 'Incidencia'
         || query =='incidencia'
-        || query == 'Intrahospitalaria'
-        || query =='intrahospitalaria'
-        || query == 'Alta hospitalaria'
-        || query =='alta hospitalaria'
+        || query == 'Intrahospitalaria, tromboprevención'
+        || query =='intrahospitalaria, tromboprevención'
+        || query == 'Alta hospitalaria, tromboprevención'
+        || query =='alta hospitalaria, tromboprevención'
         || query == 'Consideraciones generales tromboprevención'
         || query =='consideraciones generales tromboprevención'
         || query == 'Enfermedad tromboembólica'
         || query =='enfermedad tromboembólica'
+        || query == 'Tromboprevención'
+        || query == 'tromboprevención'
     ){
       return new Scaffold(
         body:Column(
@@ -2183,6 +2185,8 @@ class Busqueda extends SearchDelegate<String>{
         || query == 'tipo de procedimientos quirúrgicos'
         || query == 'Especialidades quirúrgicas'
         || query == 'especialidades quirúrgicas'
+        || query == 'Tromboprofilaxis'
+        || query == 'tromboprofilaxis'
     ){
       return new Scaffold(
         body:Column(
@@ -2193,7 +2197,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new Tromboprofilaxis()));
               },
-              title: Text('Tromboprofilaxis'),
+              title: Text('Tromboprofilaxis, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],
@@ -2211,6 +2215,8 @@ class Busqueda extends SearchDelegate<String>{
         || query == 'riesgo de evento tromboembólico en cirugía'
         || query == 'Anticoagulación en cirugía abdominopélvica'
         || query == 'anticoagulación en cirugía abdominopélvica'
+        || query == 'Abdominopélvica, cirugía'
+        || query == 'abdominopélvica, cirugía'
     ){
       return new Scaffold(
         body:Column(
@@ -2221,7 +2227,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new ETAbdominopelvico()));
               },
-              title: Text('Cirugía abdominopélvica / ginecológica'),
+              title: Text('Cirugía abdominopélvica / ginecológica, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],
@@ -2250,7 +2256,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new CalculadoraCaprini(atrasRoute: '/MainMenu',)));
               },
-              title: Text('Calculadora Caprini'),
+              title: Text('Calculadora Caprini, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],
@@ -2278,7 +2284,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new FactoresRiesgoSangrado(atrasRoute: '/MainMenu',)));
               },
-              title: Text('Factores de riesgo de sangrado'),
+              title: Text('Factores de riesgo de sangrado, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],
@@ -2306,7 +2312,7 @@ class Busqueda extends SearchDelegate<String>{
                     Navigator.push(context, new MaterialPageRoute(
                         builder: (BuildContext context) => new ContraindicacionesMecanica(atrasRoute: '/MainMenu',)));
                   },
-                  title: Text('Contraindicaciones medidas mecánicas'),
+                  title: Text('Contraindicaciones medidas mecánicas, tromboprevención'),
                   leading: Image.asset('assets/m7.png'),
                 )
               ],
@@ -2316,8 +2322,8 @@ class Busqueda extends SearchDelegate<String>{
       );
     }
 
-    if(    query== 'Obesidad'
-        || query == 'obesidad'
+    if(    query== 'Obesidad, tromboprevención'
+        || query == 'obesidad, tromboprevención'
         || query == 'Cirugía en sobrepeso'
         || query == 'cirugía en sobrepeso'
         || query == 'Cirugía bariática'
@@ -2332,7 +2338,7 @@ class Busqueda extends SearchDelegate<String>{
                     Navigator.push(context, new MaterialPageRoute(
                         builder: (BuildContext context) => new ETObesidad()));
                   },
-                  title: Text('Obesidad'),
+                  title: Text('Obesidad, tromboprevención'),
                   leading: Image.asset('assets/m7.png'),
                 )
               ],
@@ -2341,9 +2347,7 @@ class Busqueda extends SearchDelegate<String>{
       );
     }
 
-    if(    query== 'Urología'
-        || query == 'urología'
-        || query == 'Cirugía genitourinaria'
+    if(    query == 'Cirugía genitourinaria'
         || query == 'cirugía genitourinaria'
         || query == 'Cirugía piso pélvico'
         || query == 'cirugía piso pélvico'
@@ -2365,7 +2369,7 @@ class Busqueda extends SearchDelegate<String>{
                     Navigator.push(context, new MaterialPageRoute(
                         builder: (BuildContext context) => new ETUrologico()));
                   },
-                  title: Text('Procedimientos urológicos'),
+                  title: Text('Procedimientos urológicos, tromboprevención'),
                   leading: Image.asset('assets/m7.png'),
                 )
               ],
@@ -2394,7 +2398,7 @@ class Busqueda extends SearchDelegate<String>{
                     Navigator.push(context, new MaterialPageRoute(
                         builder: (BuildContext context) => new ETCirugiaPlastica()));
                   },
-                  title: Text('Cirugía plástica'),
+                  title: Text('Cirugía plástica, tromboprevención'),
                   leading: Image.asset('assets/m7.png'),
                 )
               ],
@@ -2425,7 +2429,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new ETCirugiaPlastica()));
               },
-              title: Text('Otorrinolaringología'),
+              title: Text('Otorrinolaringología, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],
@@ -2450,7 +2454,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new ETCardiovascular()));
               },
-              title: Text('Cirugía cardiovascular'),
+              title: Text('Cirugía cardiovascular, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],
@@ -2475,7 +2479,7 @@ class Busqueda extends SearchDelegate<String>{
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context) => new ETTraumatologia()));
               },
-              title: Text('Traumatología'),
+              title: Text('Traumatología, tromboprevención'),
               leading: Image.asset('assets/m7.png'),
             )
           ],

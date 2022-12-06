@@ -82,7 +82,7 @@ class _DolorModeradoState extends State<DolorModerado> {
                       Container(child:
                       InkWell(
                         child: Image.asset("assets/ReferenciasBoton.png",width: MediaQuery.of(context).size.width*0.1),
-                        onTap: ()=>_goToURL("https://drive.google.com/file/d/1ZfnfhzzvVsABdN07UIAYW0dDJ0LUegrg/view?usp=share_link"),
+                        onTap: ()=>_goToURL("https://drive.google.com/file/d/1Fgpp4pbmIvBDrauQy8xmuBf7TfHhndaQ/view?usp=share_link"),
                       ),
                       ),
                     ],

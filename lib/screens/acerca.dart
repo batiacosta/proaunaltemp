@@ -92,7 +92,15 @@ class AcercaDe extends StatelessWidget {
                         text: "Jairo Alberto Morantes Caballero\n",
                         style: _estiloLetra1Bold(context)
                     ),TextSpan(
-                        text: "Especialista Medicina Interna Universidad Nacional, Epidemiología- Universidad del Rosario, Director de Clínicas Médicas HUN, Director de Prestación de Servicios hospitalarios y ambulatorios HUN, Docente Medicina Interna Universidad Nacional\n\n",
+                        text: "Médido especialista Medicina interna Universidad Nacional, Epidemiología- Universidad del Rosario, Director de Clínicas Médicas HUN, Director de Prestación de Servicios hospitalarios y ambulatorios HUN, Docente Medicina Interna Universidad Nacional.\n\n",
+                        style: _estiloLetra1(context)
+                    ),
+
+                    TextSpan(
+                        text: "María Patricia Gómez\n",
+                        style: _estiloLetra1Bold(context)
+                    ),TextSpan(
+                        text: "Médico especialista en Anestesiología y reanimación, Dolor y cuidados paliativos. Anestesióloga del Hospital Universitario Nacional. Docente de la Facultad de Medicina, Universidad Nacional de Colombia.\n\n",
                         style: _estiloLetra1(context)
                     ),
 

@@ -74,9 +74,10 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                         child: Text(
                           'Se sugiere',
                           style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
-                          textAlign: TextAlign.center,
+                          textAlign: TextAlign.left,
                         ),
                       ),
+                      s.espacio(),
                       Container(
                         width: double.infinity,
                         child: Row(
@@ -84,7 +85,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              '• ',
+                              '✓ ',
                               style: s.regularBold(context, c.infeccionTractoUrinarioVerde),
                             ),
                             Expanded(
@@ -99,7 +100,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                                       ),
                                       TextSpan(
                                         text: 'Cefalosporina de primera generación (cefazolina IV, cefalexina oral).',
-                                        style: s.regular(context, c.tromboprofilaxisGris),
+                                        style: s.regular(context, c.black),
                                       ),
                                     ]
                                   ),
@@ -108,6 +109,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                           ],
                         ),
                       ),
+                      s.espacio(),
                       Container(
                         width: double.infinity,
                         child: Row(
@@ -115,7 +117,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              '• ',
+                              '✓ ',
                               style: s.regularBold(context, c.infeccionTractoUrinarioVerde),
                             ),
                             Expanded(
@@ -129,7 +131,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                                         ),
                                         TextSpan(
                                           text: 'Cefalosporina de segunda generación (cefuroxima IV u oral).',
-                                          style: s.regular(context, c.tromboprofilaxisGris),
+                                          style: s.regular(context, c.black),
                                         ),
                                       ]
                                   ),
@@ -138,6 +140,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                           ],
                         ),
                       ),
+                      s.espacio(),
                       Container(
                         width: double.infinity,
                         child: Row(
@@ -145,7 +148,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              '• ',
+                              '✓ ',
                               style: s.regularBold(context, c.infeccionTractoUrinarioVerde),
                             ),
                             Expanded(
@@ -160,7 +163,7 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                                         ),
                                         TextSpan(
                                           text: 'Cefalosporina de tercera generación (ceftriaxona IV).',
-                                          style: s.regular(context, c.tromboprofilaxisGris),
+                                          style: s.regular(context, c.black),
                                         ),
                                       ]
                                   ),
@@ -175,118 +178,132 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                         'Como puntos de buena práctica: ',
                         style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Como alternativa en caso de alergia a beta-lactámicos: Aztreonam.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'No usar nitrofurantoína ni fosfomicina-trometamol en caso de sospecha clínica '
                             'o diagnóstico confirmado de pielonefritis.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'No usar como tratamiento antimicrobiano empírico: amoxicilina, amoxicilina/clavulanato, '
                             'ampicilina, ampicilina/sulbactam, trimetoprim/sulfametoxazol o fluoroquinolonas.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Si se dispone del resultado de urocultivo y antibiograma tomado en los últimos 3 meses, '
                             'se puede utilizar para decidir el tratamiento antimicrobiano a instaurar.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Para la elección y ajuste de dosis de los antimicrobianos, estimar '
                             'la TFG usando las ecuaciones basadas en creatinina sérica.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Realizar seguimiento de los eventos adversos de los antimicrobianos '
                             'empleados incluyendo la resistencia bacteriana.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Revalorar a las 48 horas del inicio de la terapia antimicrobiana, y en caso de '
                             'mala respuesta considerar posibles causas o diagnósticos adicionales.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'En pacientes con evolución clínica favorable, mantener la terapia antimicrobiana empírica, independientemente del reporte '
                             'del antibiograma aun cuando se presente resistencia al antimicrobiano instaurado.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Ajustar el tratamiento antimicrobiano de acuerdo con el resultado del urocultivo y el antibiograma, en cuanto esté '
                             'disponible, usando el antibiótico de espectro más estrecho posible.',
                       ),
-                      s.espacioPequeno(),
+                      s.espacio(),s.espacio(),
 
                       Text(
-                        'Via de administración: ',
-                        style: s.regular(context,c.infeccionTractoUrinarioVerde),
+                        'Vía de administración, se sugiere: ',
+                        style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
-                      BulletPointRegular(
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
-                        //align: 'j',
+                        bullet: s.chulo,
                         text: 'Emplear como primera línea el uso de antimicrobianos orales, teniendo en '
                             'cuenta la tolerancia a la vía oral y la gravedad de la infección.',
                       ),
-                      BulletPointRegular(
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
-                        //align: 'j',
+                        bullet: s.chulo,
                         text: 'En pacientes con tratamiento intravenoso, revalorar a las 48 horas de inicio de la terapia '
                             'antimicrobiana, para considerar la posibilidad del cambio a antimicrobianos orales.',
                       ),
-                      s.espacioPequeno(),
+                      s.espacio(),s.espacio(),
 
                       Text(
                         'Duración del tratamiento antimicrobiano:',
-                        style: s.regular(context,c.infeccionTractoUrinarioVerde),
+                        style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
-                      BulletPointRegular(
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        bullet: s.chulo,
                         //align: 'j',
                         text: 'Se sugiere que sea de mínimo 7 días y máximo 10 días.',
                       ),
-                      s.espacioPequeno(),
+                      s.espacio(),
 
                       Text(
                         'Como puntos de buena práctica: ',
-                        style: s.regular(context,c.infeccionTractoUrinarioVerde),
+                        style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
 
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Considere extender la duración del tratamiento antimicrobiano en pacientes:',
                       ),
                       Container(
                         padding: s.margenIzquierdo(context),
                         child: BulletPointRegularGeneric(
-                          color: c.tromboprofilaxisGris,
-                          colorText: c.tromboprofilaxisGris,
+                          color: c.black,
+                          colorText: c.black,
                           bullet: '- ',
                           text: 'Inmunosuprimidos.',
                         ),
@@ -294,8 +311,8 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                       Container(
                         padding: s.margenIzquierdo(context),
                         child: BulletPointRegularGeneric(
-                          color: c.tromboprofilaxisGris,
-                          colorText: c.tromboprofilaxisGris,
+                          color: c.black,
+                          colorText: c.black,
                           bullet: '- ',
                           text: 'Con presencia de colecciones aún no drenadas.',
                         ),
@@ -303,16 +320,17 @@ class _TratamientoPielonefritiscomplicadaState extends State<TratamientoPielonef
                       Container(
                         padding: s.margenIzquierdo(context),
                         child: BulletPointRegularGeneric(
-                          color: c.tromboprofilaxisGris,
-                          colorText: c.tromboprofilaxisGris,
+                          color: c.black,
+                          colorText: c.black,
                           bullet: '- ',
                           text: 'Usuarios de dispositivos urinarios.',
                         ),
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.triangulito,
+                        bullet: s.punto,
                         text: 'No realizar urocultivo posterior a la finalización del tratamiento '
                             'antimicrobiano en pacientes con respuesta clínica adecuada.',
                       ),

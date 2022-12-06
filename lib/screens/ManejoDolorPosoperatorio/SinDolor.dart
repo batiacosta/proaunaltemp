@@ -90,12 +90,6 @@ class _SinDolorState extends State<SinDolor> {
                         ),
                       ),
                       Expanded(child: Container()),
-                      Container(child:
-                        InkWell(
-                          child: Image.asset("assets/ReferenciasBoton.png",width: MediaQuery.of(context).size.width*0.1),
-                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1ZfnfhzzvVsABdN07UIAYW0dDJ0LUegrg/view?usp=share_link"),
-                        ),
-                      ),
                     ],
                   ),
                 ),
@@ -120,7 +114,7 @@ class _SinDolorState extends State<SinDolor> {
                         text: TextSpan(
                             children: [
                               TextSpan(
-                                text: "Sin presencia de dolor, no es necesario hacer tratamiento.",
+                                text: "Sin presencia de dolor, no es necesario realizar tratamiento.",
                                 style: s.regular(context, c.black),
                               ),
                             ]

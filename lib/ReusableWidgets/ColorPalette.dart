@@ -28,7 +28,7 @@ class ColorPalette {
   Color tromboprofilaxisAzulClaro = const Color(0xff5DC7D1);
   Color tromboprofilaxisAzulClaroIntenso = const Color(0xff00B0F0);
 
-  Color infeccionTractoUrinarioVerde = const Color(0xff52658C);
+  Color infeccionTractoUrinarioVerde = const Color(0xff5DC7D1);
   Color infeccionTractoUrinarioAmarillo = const Color(0xffF3BC32);
   Color infeccionTractoUrinarioVerdeOscuro = const Color(0xff52658C);
 }

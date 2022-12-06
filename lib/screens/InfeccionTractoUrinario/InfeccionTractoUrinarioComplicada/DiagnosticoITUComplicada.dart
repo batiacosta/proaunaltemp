@@ -56,11 +56,7 @@ class _DiagnosticoITUComplicadaState extends State<DiagnosticoITUComplicada> {
               children: [
                 Volver(1, "/ITUComplicada"),
                 ImagenEncabezadoSeccion("assets/InfeccionTractoUrinario/InfeccionComplicada.png"),
-                SquaredCenteredBold(
-                  textColor: c.white,
-                  text: 'Diagnóstico ITU complicada',
-                  color: c.infeccionTractoUrinarioAmarillo,
-                ),
+
                 Container(
                   color: c.white,
                   width: double.infinity,
@@ -79,64 +75,68 @@ class _DiagnosticoITUComplicadaState extends State<DiagnosticoITUComplicada> {
                             'fracaso terapéutico o recurrencia de la infección, la cual incluye un amplio grupo de pacientes y patologías '
                             '(ej. mujeres posmenopáusicas, hombres adultos, pacientes con patología urológica, usuarios de catéter '
                             'urinario, adultos mayores, pacientes con diagnóstico de diabetes, entre otros).',
-                        style: s.regular(context,c.tromboprofilaxisGris),
+                        style: s.regular(context,c.black),
                         textAlign: TextAlign.justify,
                       ),
                       s.espacio(),
 
                       SquaredCenteredBold(
                         textColor: c.white,
-                        text: 'Puntos de buena practica para el diagnóstico de ITU complicada',
-                        color: c.infeccionTractoUrinarioVerdeOscuro,
+                        text: 'Puntos de buena práctica para el diagnóstico de ITU complicada',
+                        color: c.infeccionTractoUrinarioAmarillo,
                       ),
                       s.espacio(),
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'En pacientes que presenten dos o más síntomas urinarios bajos '
                             '(disuria, polaquiuria, urgencia, dolor suprapúbico, hematuria) considerar '
                             'la sospecha clínica de ITU.',
                       ),
+                      s.espacio(),
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'En pacientes con fiebre y dolor en flanco, incluso en ausencia de '
                             'síntomas urinarios bajos, considerar la sospecha clínica de ITU.',
                       ),
-                      s.espacioPequeno(),
+                      s.espacio(),
+
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'En pacientes adultos mayores:',
                       ),
-
                       Container(
                         margin: s.margenIzquierdo(context),
-                        child: BulletPointRegular(
-                          color: c.infeccionTractoUrinarioVerde,
-                          colorText: c.tromboprofilaxisGris,
+                        child: BulletPointRegularGeneric(
+                        colorText: c.black,
+                        color: c.infeccionTractoUrinarioVerde,
+                        bullet: s.guion,
                           text: 'Con patología neurocognitiva, trastorno de la comunicación, o que no presenten síntomas típicos de IVU, '
                               'considerar la ITU como un diagnóstico de exclusión.',
                         ),
                       ),
                       Container(
                         margin: s.margenIzquierdo(context),
-                        child: BulletPointRegular(
-                          color: c.infeccionTractoUrinarioVerde,
-                          colorText: c.tromboprofilaxisGris,
-                          text: 'Aun en ausencia de fiebre, considerar el diagnostico de ITU.',
+                        child: BulletPointRegularGeneric(
+                        colorText: c.black,
+                        color: c.infeccionTractoUrinarioVerde,
+                        bullet: s.guion,
+                          text: 'Aun en ausencia de fiebre, considerar el diagnóstico de ITU.',
                         ),
                       ),
                       Container(
                         margin: s.margenIzquierdo(context),
-                        child: BulletPointRegular(
-                          color: c.infeccionTractoUrinarioVerde,
-                          colorText: c.tromboprofilaxisGris,
+                        child: BulletPointRegularGeneric(
+                        colorText: c.black,
+                        color: c.infeccionTractoUrinarioVerde,
+                        bullet: s.guion,
                           text: 'Con manifestaciones atípicas de infección como: delirium, caída centinela, '
                               'alteraciones en el patrón de incontinencia, y/o síntomas gastrointestinales, considerar la sospecha clínica de ITU.',
                         ),
@@ -144,45 +144,50 @@ class _DiagnosticoITUComplicadaState extends State<DiagnosticoITUComplicada> {
 
 
 
-                      s.espacioPequeno(),
+                      s.espacio(),
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Utilizar los parámetros de la tira reactiva y el Gram de orina sin centrifugar '
                             'como herramientas para realizar el diagnóstico de ITU.',
                       ),
+                      s.espacio(),
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.triangulito,
+                        bullet: s.punto,
                         text: 'No usar la apariencia de la orina, ni el hallazgo de piuria, como herramientas únicas para realizar el diagnóstico de ITU, '
                             'especialmente en pacientes portadores de catéter urinario.',
                       ),
+                      s.espacio(),
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'En pacientes portadores de catéter urinario tomar la muestra de orina con las medidas de asepsia y antisepsia '
                             'apropiadas o a partir del reservorio destinado para tal efecto.',
                       ),
+                      s.espacio(),
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Considerar la toma de imágenes diagnósticas del tracto urinario para '
                             'identificar trastornos '
                             'urológicos que requieran manejo complementario.',
                       ),
+                      s.espacio(),
+
 
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Considerar la toma de hemocultivos en pacientes con sepsis y sospecha clínica '
                             'de ITU.',
                       ),

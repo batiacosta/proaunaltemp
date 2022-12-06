@@ -182,6 +182,19 @@ class _BibliografiaState extends State<Bibliografia> {
             context,
             'National institute for Health and Care Excellence. Pyelonephritis (acute): antimicrobial prescribing NG111. 2018 Available: https://www.nice.org.uk/guidance/ng111\n'
         ),
+        bibliografiaContent(
+            context,
+            'Abella P, Gómez MP, Ruta para el manejo del dolor agudo en: Abella P, Manual de rutas clínicas de dolor, 2. edición, Secretaría Distrital de Salud de Bogotá, 2019, pp.20 -60.\n'
+        ),bibliografiaContent(
+            context,
+            'Chou R, Gordon DB, de Leon-Casasola OA, Rosenberg JM, Bickler S, Brennan T, CarterT, Cassidy CL, Chi􏰀enden EH, Degenhardt E, Griffith S, Manworren R, McCarberg BM, ontgomery R, Murphy J, Perkal MF, Suresh S, Sluka K, Strassels S, Thirlby R, ViscuEsi, Walco GA, Warner L, Weisman SJ, Wu CL. Management of postoperative pain: a clinical practice guideline from the A merican Pain S ociety, the American Society of RegionalAnesthesia and Pain Medicine, and the American Society of Anesthesiologists’ Commi􏰀eeon Regional Anesthesia, Executive Commi􏰀ee, and Administrative Council. J Pain 2016;17(2):131–57.Chou R, Gordon DB, de Leon-Casasola OA, Rosenberg JM, Bickler S, Brennan T, CarterT, Cassidy CL, Chi􏰀enden EH, Degenhardt E, Griffith S, Manworren R, McCarberg BM, ontgomery R, Murphy J, Perkal MF, Suresh S, Sluka K, Strassels S, Thirlby R, ViscuEsi, Walco GA, Warner L, Weisman SJ, Wu CL. Management of postoperative pain: a clinical practice guideline from the A merican Pain S ociety, the American Society of RegionalAnesthesia and Pain Medicine, and the American Society of Anesthesiologists’ Commi􏰀eeon Regional Anesthesia, Executive Commi􏰀ee, and Administrative Council. J Pain 2016;17(2):131–57.\n'
+        ),bibliografiaContent(
+            context,
+            'Bartlett MA, Mauck KF, Stephenson CR, Ganesh R, Daniels PR. Perioperative Venous Thromboembolism Prophylaxis. Mayo Clin Proc. 2020 Dec;95(12):2775-2798. doi: 10.1016/j.mayocp.2020.06.015. PMID: 33276846.\n'
+        ),bibliografiaContent(
+            context,
+            'Anderson, D. R., Morgano, G. P., Bennett, C., Dentali, F., Francis, C. W., Garcia, D. A., Kahn, S. R., Rahman, M., Rajasekhar, A., Rogers, F. B., Smythe, M. A., Tikkinen, K., Yates, A. J., Baldeh, T., Balduzzi, S., Brożek, J. L., Ikobaltzeta, I. E., Johal, H., Neumann, I., Wiercioch, W., … Dahm, P. (2019). American Society of Hematology 2019 guidelines for management of venous thromboembolism: prevention of venous thromboembolism in surgical hospitalized patients. Blood advances, 3(23), 3898–3944. doi: 10.1182/bloodadvances.2019000975.\n'
+        ),
       ],
     );
   }

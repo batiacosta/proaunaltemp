@@ -78,6 +78,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                           textAlign: TextAlign.justify,
                         ),
                       ),
+                      s.espacio(),
                       Container(
                         width: double.infinity,
                         child: Row(
@@ -85,7 +86,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              '• ',
+                              '✓ ',
                               style: s.regularBold(context, c.infeccionTractoUrinarioVerde),
                             ),
                             Expanded(
@@ -99,7 +100,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                                       ),
                                       TextSpan(
                                         text: 'Nitrofurantoina.',
-                                        style: s.regular(context, c.tromboprofilaxisGris),
+                                        style: s.regular(context, c.black),
                                       ),
                                     ]
                                   ),
@@ -108,6 +109,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                           ],
                         ),
                       ),
+                      s.espacio(),
                       Container(
                         width: double.infinity,
                         child: Row(
@@ -115,7 +117,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              '• ',
+                              '✓ ',
                               style: s.regularBold(context, c.infeccionTractoUrinarioVerde),
                             ),
                             Expanded(
@@ -129,7 +131,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                                         ),
                                         TextSpan(
                                           text: 'Fosfomicina-trometamol.',
-                                          style: s.regular(context, c.tromboprofilaxisGris),
+                                          style: s.regular(context, c.black),
                                         ),
                                       ]
                                   ),
@@ -138,6 +140,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                           ],
                         ),
                       ),
+                      s.espacio(),
                       Container(
                         width: double.infinity,
                         child: Row(
@@ -145,7 +148,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              '• ',
+                              '✓ ',
                               style: s.regularBold(context, c.infeccionTractoUrinarioVerde),
                             ),
                             Expanded(
@@ -159,7 +162,7 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                                         ),
                                         TextSpan(
                                           text: 'Cefalosporina de primera generación (cefazolina IV).',
-                                          style: s.regular(context, c.tromboprofilaxisGris),
+                                          style: s.regular(context, c.black),
                                         ),
                                       ]
                                   ),
@@ -175,51 +178,58 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                         'Como puntos de buena práctica: ',
                         style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.triangulito,
+                        bullet: s.punto,
                         text: 'No usar como tratamiento antimicrobiano empírico: amoxicilina, amoxicilina/clavulanato, '
                             'ampicilina, ampicilina/sulbactam, trimetoprim/sulfametoxazol o fluoroquinolonas.',
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Si se dispone del resultado de urocultivo y antibiograma tomado en los últimos 3 meses, '
                             'se puede utilizar para decidir el tratamiento antimicrobiano a instaurar.',
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Para la elección y ajuste de dosis de los antimicrobianos, estimar la TFG usando las '
                             'ecuaciones basadas en creatinina sérica.',
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Realizar seguimiento de los eventos adversos de los antimicrobianos empleados incluyendo '
                             'la resistencia bacteriana.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Revalorar a las 48 horas del inicio de la terapia antimicrobiana, y en caso de mala respuesta'
                             ' considerar posibles causas o diagnósticos adicionales.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'En pacientes con evolución clínica favorable, mantener la terapia antimicrobiana empírica, '
                             'independientemente del reporte del antibiograma aun cuando se presente resistencia al antimicrobiano instaurado.',
                       ),
+                      s.espacio(),
                       BulletPointRegular(
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         //align: 'j',
                         text: 'Ajustar el tratamiento antimicrobiano de acuerdo con el resultado del urocultivo '
                             'y el antibiograma, en cuanto esté disponible, '
@@ -229,25 +239,53 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                       s.espacio(),s.espacio(),
 
                       Text(
+                        'Vía de administración, se sugiere: ',
+                        style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
+                      ),
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
+                        color: c.infeccionTractoUrinarioVerde,
+                        bullet: s.chulo,
+                        //align: 'j',
+                        text: 'Emplear como primera línea el uso de antimicrobianos orales, teniendo en cuenta '
+                            'la tolerancia a la vía oral y la gravedad de la infección.',
+                      ),
+                      s.espacio(),s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
+                        color: c.infeccionTractoUrinarioVerde,
+                        bullet: s.chulo,
+                        text: ' En pacientes con tratamiento intravenoso, revalorar '
+                            'a las 48 horas de inicio de la terapia antimicrobiana, '
+                            'para considerar la posibilidad del cambio a antimicrobianos orales.',
+                      ),
+                      s.espacio(),
+
+                      Text(
                         'Duración del tratamiento antimicrobiano, se sugiere:',
                         style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
-                      BulletPointRegular(
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
-                        //align: 'j',
+                        bullet: s.chulo,
                         text: 'En mujeres postmenopáusicas en tratamiento con nitrofurantoína o cefalosporina: 5 días.',
                       ),
-                      BulletPointRegular(
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
+                        bullet: s.chulo,
                         //align: 'j',
                         text: 'En pacientes hombres o en pacientes con IVU baja asociada a catéter: 7 días.',
                       ),
-                      BulletPointRegular(
+                      s.espacio(),
+                      BulletPointRegularGeneric(
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        colorText: c.tromboprofilaxisGris,
-                        //align: 'j',
+                        bullet: s.chulo,
                         text: '	Fosfomicina-trometamol: Una dosis única.',
                       ),
 
@@ -257,18 +295,19 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                         'Como puntos de buena práctica: ',
                         style: s.regularBold(context,c.infeccionTractoUrinarioVerde),
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.chulo,
+                        bullet: s.punto,
                         text: 'Considere extender la duración del tratamiento antimicrobiano en pacientes:',
                       ),
 
                       Container(
                         padding: s.margenIzquierdo(context),
                         child: BulletPointRegularGeneric(
-                          color: c.tromboprofilaxisGris,
-                          colorText: c.tromboprofilaxisGris,
+                          color: c.black,
+                          colorText: c.black,
                           bullet: '- ',
                           text: 'Inmunosuprimidos.',
                         ),
@@ -276,8 +315,8 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                       Container(
                         padding: s.margenIzquierdo(context),
                         child: BulletPointRegularGeneric(
-                          color: c.tromboprofilaxisGris,
-                          colorText: c.tromboprofilaxisGris,
+                          color: c.black,
+                          colorText: c.black,
                           bullet: '- ',
                           text: 'Con presencia de colecciones aún no drenadas.',
                         ),
@@ -285,16 +324,17 @@ class _TratamientoCistitisComplicadaState extends State<TratamientoCistitisCompl
                       Container(
                         padding: s.margenIzquierdo(context),
                         child: BulletPointRegularGeneric(
-                          color: c.tromboprofilaxisGris,
-                          colorText: c.tromboprofilaxisGris,
+                          color: c.black,
+                          colorText: c.black,
                           bullet: '- ',
                           text: 'Usuarios de dispositivos urinarios.',
                         ),
                       ),
+                      s.espacio(),
                       BulletPointRegularGeneric(
-                        colorText: c.tromboprofilaxisGris,
+                        colorText: c.black,
                         color: c.infeccionTractoUrinarioVerde,
-                        bullet: s.triangulito,
+                        bullet: s.punto,
                         text: 'No realizar urocultivo posterior a la finalización del tratamiento antimicrobiano '
                             'en pacientes con respuesta clínica adecuada.',
                       ),
