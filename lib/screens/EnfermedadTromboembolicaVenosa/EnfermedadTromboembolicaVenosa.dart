@@ -102,6 +102,13 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Volver(2, "/MainMenu"),
+                Text(
+                  'Importancia de la tromboprevención.',
+                  textAlign: TextAlign.center,
+                  style: s.h1Bold(context, c.enfermedadTromboembolicaVenosaRojoCabecera,
+                  ),
+                ),
+                s.espacio(),
                 RichText(
                   textAlign: TextAlign.left,
                     text: TextSpan(
@@ -186,12 +193,13 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                             style: s.regularBold(context, c.enfermedadTromboembolicaVenosaRojoCabecera)
                         ),
                         TextSpan(
-                            text: ", generando costos a paciente y sus familias.",
+                            text: ", genera costos al paciente y su familia.",
                             style: s.regular(context, c.black)
                         ),
                       ]
                   ),
                 ),
+                s.espacio(),
                 Row(
                   children: [
                     Expanded(child: Container()),
@@ -208,6 +216,8 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                     ),
                   ],
                 ),
+                s.espacio(),
+                s.espacio(),
                 s.espacio(),
                 Text(
                     'MANEJO INTEGRAL DE LA TROMBO PREVENCIÓN',
@@ -407,22 +417,24 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               colorText: c.enfermedadTromboembolicaVenosaNaranja,
               text: 'Preoperatorio',
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  '• ',
-                  style: s.regularBold(context, c.enfermedadTromboembolicaVenosaNaranja,),
-                ),
-                Expanded(
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    '•  ',
+                    style: s.regularBold(context, c.enfermedadTromboembolicaVenosaNaranja,),
+                  ),
+                  Expanded(
                     child: RichText(
                       textAlign: TextAlign.left,
                       text: TextSpan(
                           children: [
                             TextSpan(
                                 text: "Informar a paciente y familiares: ",
-                                style: s.regularBold(context, c.black)
+                                style: s.regular(context, c.black)
                             ),
                             TextSpan(
                                 text: "Razón por la que se les realiza una evaluación de riesgo de TEV y hemorragia. ",
@@ -431,14 +443,19 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
                           ]
                       ),
                     ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Iniciar estrategia de profilaxis antes del procedimiento.',
-            ),
+        Container(
+          margin: s.margenIzquierdo(context),
+          child: BulletPointRegular(
+            color: c.enfermedadTromboembolicaVenosaNaranja,
+            colorText: c.black,
+            text: 'Iniciar estrategia de profilaxis antes del procedimiento.',
+          ),
+        ),
+
             s.espacio(),
 
             BulletPointBold(
@@ -446,25 +463,37 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               colorText: c.enfermedadTromboembolicaVenosaNaranja,
               text: 'Intraoperatorio',
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Abordar los factores de riesgo modificables.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Abordar los factores de riesgo modificables.',
+              ),
+                    ),
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Limitar el tiempo quirúrgico.',
+              ),
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Limitar el tiempo quirúrgico.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Considerar cirugía menos invasiva (laparoscópica vs abierta).',
+              ),
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Considerar cirugía menos invasiva (laparoscópica vs abierta).',
-            ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Evaluaciones regulares de TEV y riesgo de sangrado.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Evaluaciones regulares de TEV y riesgo de sangrado.',
+              ),
             ),
             s.espacio(),
 
@@ -473,40 +502,61 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               colorText: c.enfermedadTromboembolicaVenosaNaranja,
               text: 'Postoperatorio',
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Abordar los factores de riesgo modificables.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Abordar los factores de riesgo modificables.',
+              ),
+                    ),
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Deambulación temprana o terapia física.',
+              ),
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Deambulación temprana o terapia física.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Evitar la deshidratación.',
+              ),
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Evitar la deshidratación.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Evitar la hipertensión severa.',
+              ),
             ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Evitar la hipertensión severa.',
-            ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Aplazar la cirugía hasta que los agentes antitrombóticos no sean necesarios.',
-            ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Cambios de posición si debe permanecer más de 8 horas.',
-            ),
-            BulletPointRegular(
-              color: c.enfermedadTromboembolicaVenosaNaranja,
-              colorText: c.black,
-              text: 'Asegurar el cumplimiento de la profilaxis.',
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Aplazar la cirugía hasta que los agentes antitrombóticos no sean necesarios.',
+              ),
+                      ),
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Cambios de posición si debe permanecer más de 8 horas.',
+              ),
+                        ),
+            Container(
+              margin: s.margenIzquierdo(context),
+              child: BulletPointRegular(
+                color: c.enfermedadTromboembolicaVenosaNaranja,
+                colorText: c.black,
+                text: 'Asegurar el cumplimiento de la profilaxis.',
+              ),
             ),
             s.espacio(),
 
@@ -533,10 +583,10 @@ class _EnfermedadTromboembolicaVenosaState extends State<EnfermedadTromboembolic
               colorText: c.black,
               text: 'Definir la duración de profilaxis.',
             ),
-            BulletPointBold(
+            BulletPointRegular(
               color: c.enfermedadTromboembolicaVenosaRojo,
-              colorText: c.enfermedadTromboembolicaVenosaRojo,
-              text: 'Educación del paciente/familia:',
+              colorText: c.black,
+              text: 'Educación del paciente/familia.',
             ),
             BulletPointRegular(
               color: c.enfermedadTromboembolicaVenosaRojo,

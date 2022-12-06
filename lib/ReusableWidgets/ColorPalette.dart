@@ -12,6 +12,7 @@ class ColorPalette {
   Color dolorPosoperatorioAzul = const Color(0xff0666A1);
   Color dolorPosoperatorioAzulClaro = const Color(0xff60BAE9);
   Color dolorPosoperatorioGreen = const Color(0xff82A74B);
+  Color dolorPosoperatorioGreenSinDolor = const Color(0xff1CB262);
   Color dolorPosoperatorioOrange = const Color(0xffF59108);
 
   Color enfermedadTromboembolicaVenosaBackground = const Color(0xffFEF0F3);
@@ -26,4 +27,8 @@ class ColorPalette {
   Color tromboprofilaxisAzulrey = const Color(0xff0666A1);
   Color tromboprofilaxisAzulClaro = const Color(0xff5DC7D1);
   Color tromboprofilaxisAzulClaroIntenso = const Color(0xff00B0F0);
+
+  Color infeccionTractoUrinarioVerde = const Color(0xff5DC7D1);
+  Color infeccionTractoUrinarioAmarillo = const Color(0xffF3BC32);
+  Color infeccionTractoUrinarioVerdeOscuro = const Color(0xff52658C);
 }

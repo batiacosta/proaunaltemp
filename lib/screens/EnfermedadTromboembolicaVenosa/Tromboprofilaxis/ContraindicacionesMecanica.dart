@@ -15,6 +15,22 @@ import 'package:acin/ReusableWidgets/headers.dart';
 import 'package:acin/ReusableWidgets/manipularImagen.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/EnfermedadTromboembolicaVenosa.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/CalculadoraCaprini.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETAbdominopelvico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCardiovascular.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCirugiaPlastica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETNeurologica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObesidad.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObstetricia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOrtopedia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOtorrinolaringologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETToracica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETTraumatologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETUrologico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETVascularPeriferico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/FactoresRiesgoSangrado.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/Tromboprofilaxis.dart';
 import 'package:acin/screens/mainMenu.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +58,28 @@ class _ContraindicacionesMecanicaState extends State<ContraindicacionesMecanica>
     colorClaro = c.enfermedadTromboembolicaVenosaBackground;
     colorMedio = c.enfermedadTromboembolicaVenosaRojoCabecera;
 
-    return new Scaffold(
+    return new MaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+          "/MainMenu":(BuildContext context)=>MainMenu(),
+          "/Tromboprofilaxis":(BuildContext context)=>Tromboprofilaxis(),
+          "/EnfermedadTromboembolicaVenosa":(BuildContext context)=>EnfermedadTromboembolicaVenosa(),
+          "/ETAbdominopelvico":(BuildContext context)=>ETAbdominopelvico(),
+          "/ETObesidad":(BuildContext context)=>ETObesidad(),
+          "/ETUrologico":(BuildContext context)=>ETUrologico(),
+          "/ETCirugiaPlastica":(BuildContext context)=>ETCirugiaPlastica(),
+          "/ETOtorrinolaringologia":(BuildContext context)=>ETOtorrinolaringologia(),
+          "/ETCardiovascular":(BuildContext context)=>ETCardiovascular(),
+          "/ETVascularPeriferico":(BuildContext context)=>ETVascularPeriferico(),
+          "/ETToracica":(BuildContext context)=>ETToracica(),
+          "/ETObstetricia":(BuildContext context)=>ETObstetricia(),
+          "/ETNeurologica":(BuildContext context)=>ETNeurologica(),
+          "/ETOrtopedia":(BuildContext context)=>ETOrtopedia(),
+          "/ETTraumatologia":(BuildContext context)=>ETTraumatologia(),
+          "/FactoresRiesgoSangrado":(BuildContext context)=>FactoresRiesgoSangrado(),
+          "/CalculadoraCaprini":(BuildContext context)=>CalculadoraCaprini(),
+        },
+        home: Scaffold(
         drawer: MenuDesplegado(),
         appBar: BarraSuperior().Barra(context, false),
         bottomNavigationBar: BarraInferior(),
@@ -51,10 +88,14 @@ class _ContraindicacionesMecanicaState extends State<ContraindicacionesMecanica>
         body: SafeArea(
           child: cuerpo(context),
         )
+        )
     );
   }
 
   Widget cuerpo(context){
+    if(widget.atrasRoute == null || widget.atrasRoute.isEmpty) setState(() {
+      widget.atrasRoute = '/Tromboprofilaxis';
+    });
     return new Container(
       child: ListView(
         children: [

@@ -131,7 +131,7 @@ class _LoginState extends State<Login> {
 
           Container(
             child: InkWell(
-              child: Text('V 1.0.1\nPolíticas',
+              child: Text('V 1.1.0\nPolíticas',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontFamily: "Ancizar",

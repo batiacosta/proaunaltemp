@@ -42,7 +42,15 @@ class Volver extends StatelessWidget {
               ),
               child:Image.asset('assets/volver.png', ),
               onPressed: (){
-                Navigator.pushNamed(context, ruta);
+                if(ruta == '/MainMenu'){
+                  Navigator.pushAndRemoveUntil(
+                    context, MaterialPageRoute(builder: (context) => MainMenu()),
+                        (Route<dynamic> route) => false,
+                  );
+                }else{
+                  Navigator.pushNamed(context, ruta);
+                }
+
               },
             ),
           )

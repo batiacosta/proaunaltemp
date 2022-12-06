@@ -225,7 +225,7 @@ class _RegistroState extends State<Registro> {
                 Container(height:MediaQuery.of(context).size.height*0.025,),
                 Container(
                   child: InkWell(
-                    child: Text('V 1.0.1\nPolíticas',
+                    child: Text('V 1.1.0\nPolíticas',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontFamily: "Ancizar",
