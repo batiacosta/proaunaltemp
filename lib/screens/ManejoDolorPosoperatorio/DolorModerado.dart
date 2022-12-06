@@ -22,7 +22,9 @@ class _DolorModeradoState extends State<DolorModerado> {
   GeneralSettings s = new GeneralSettings();
   Color colorClaro;
   Color colorMedio;
-
+/*
+  Moderado
+   */
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;
@@ -57,7 +59,7 @@ class _DolorModeradoState extends State<DolorModerado> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -72,29 +74,15 @@ class _DolorModeradoState extends State<DolorModerado> {
                   child: Row(
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width*0.55,
-                        child: Column(
-                          children: [
-                            Image.asset("assets/MenejoDolorPosoperatorio/dModerado1.png"),
-                            Image.asset("assets/MenejoDolorPosoperatorio/dModerado2.png"),
-                          ],
-                        ),
+                        width: MediaQuery.of(context).size.width*0.7,
+                        child: Image.asset("assets/MenejoDolorPosoperatorio/dModerado1.png"),
                       ),
-                      Container(
-                        width: MediaQuery.of(context).size.width*0.2,
-                        child: Column(
-                          children: [
-                            Image.asset("assets/MenejoDolorPosoperatorio/4.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/5.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/6.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/7.png", height: 40),
-                          ],
-                        ),
-                      ),
-                      Expanded(child:
+                      Expanded(child: Container()),
+
+                      Container(child:
                       InkWell(
-                        child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                        onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                        child: Image.asset("assets/ReferenciasBoton.png",width: MediaQuery.of(context).size.width*0.1),
+                        onTap: ()=>_goToURL("https://drive.google.com/file/d/1Fgpp4pbmIvBDrauQy8xmuBf7TfHhndaQ/view?usp=share_link"),
                       ),
                       ),
                     ],
@@ -114,7 +102,7 @@ class _DolorModeradoState extends State<DolorModerado> {
                   margin: s.margenNormal(context),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "Paso 1 y 2",
+                    "Paso 1 + 2",
                     textAlign: TextAlign.left,
                     style: s.h1Regular(context, c.black),
                   ),

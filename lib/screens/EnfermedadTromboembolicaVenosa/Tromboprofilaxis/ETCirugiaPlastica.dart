@@ -17,6 +17,7 @@ import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ContraindicacionesMecanica.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/FactoresRiesgoSangrado.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/Tromboprofilaxis.dart';
 import 'package:acin/screens/mainMenu.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,13 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
     colorClaro = c.enfermedadTromboembolicaVenosaBackground;
     colorMedio = c.enfermedadTromboembolicaVenosaRojoCabecera;
 
-    return new Scaffold(
+    return new MaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+        "/MainMenu":(BuildContext context)=>MainMenu(),
+          "/Tromboprofilaxis":(BuildContext context)=>Tromboprofilaxis(),
+        },
+        home: Scaffold(
         drawer: MenuDesplegado(),
         appBar: BarraSuperior().Barra(context, false),
         bottomNavigationBar: BarraInferior(),
@@ -51,6 +58,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
         resizeToAvoidBottomInset: false,
         body: SafeArea(
           child: cuerpo(context),
+        )
         )
     );
   }
@@ -188,7 +196,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -202,7 +210,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -219,7 +227,7 @@ class _ETCirugiaPlasticaState extends State<ETCirugiaPlastica> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

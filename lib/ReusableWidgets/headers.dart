@@ -16,6 +16,8 @@ class Headers extends StatelessWidget {
           Container(
             margin: margenNormal(context),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   margin: EdgeInsets.only(right: MediaQuery.of(context).size.width*0.025,),
@@ -33,7 +35,7 @@ class Headers extends StatelessWidget {
                     child: Center(
                       child: Text(
                         title,
-                        textAlign: TextAlign.justify,
+                        textAlign: TextAlign.left,
                         style: _estiloLetra1(context),
                       ),
                     )

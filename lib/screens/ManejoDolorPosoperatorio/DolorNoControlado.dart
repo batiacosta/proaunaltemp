@@ -3,7 +3,6 @@ import 'package:acin/ReusableWidgets/GenralSettings.dart';
 import 'package:acin/ReusableWidgets/barraInferior.dart';
 import 'package:acin/ReusableWidgets/barraSuperior.dart';
 import 'package:acin/ReusableWidgets/headers.dart';
-import 'package:acin/ReusableWidgets/imagenEncabezadoSeccion.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/MenejoDolorPosoperatorio.dart';
@@ -58,7 +57,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -75,7 +74,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                       Container(
                         child: InkWell(
                           child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1Fgpp4pbmIvBDrauQy8xmuBf7TfHhndaQ/view?usp=share_link"),
                         ),
                       )
                     ],
@@ -83,8 +82,8 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                 ),
                 s.espacio(),
                 Container(
-                  margin: s.margenDerecho(context),
-                  child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControlado.png"),
+
+                  child: Image.asset("assets/MenejoDolorPosoperatorio/dolorNoControladoT.png"),
                 ),
                 s.espacio(),
                 s.espacio(),
@@ -101,7 +100,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("1. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Analgesia controlada por el paciente (ACP), y /o", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Analgesia controlada por el paciente (ACP), y /o", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -113,7 +112,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("2. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Bloqueo nervioso, y/o", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Bloqueo nervioso, y/o", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -125,7 +124,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("3. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Neuromoduladores: ketamina, gabapentin, pregabalina, etc", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Neuromoduladores: ketamina, gabapentin, pregabalina, etc", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -137,7 +136,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("4. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Apoyo psicológico o psiquiátrico", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Apoyo psicológico o psiquiátrico", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -149,7 +148,7 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                             child: Text("5. ", style: s.regularBold(context, c.dolorPosoperatorioRojoSevero),),
                           ),
                           Expanded(
-                            child: Text("Terapia física y/o ocupacional", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Terapia física y/o ocupacional", style: s.regular(context, c.black),textAlign: TextAlign.left,),
                           ),
                         ],
                       ),
@@ -162,13 +161,17 @@ class _DolorNoControladoState extends State<DolorNoControlado> {
                 s.espacio(),
                 s.espacio(),
                 Container(
-                  margin: s.margenIzquierdo(context),
+                  margin: s.margenNormal(context),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Expanded(child: Container()),
                       Container(
-                        width: MediaQuery.of(context).size.width*0.5,
-                        child: Image.asset("assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png"),
+                        width: MediaQuery.of(context).size.width*0.6,
+                        margin: s.margenNormal(context),
+                        child: Image.asset(
+                            "assets/MenejoDolorPosoperatorio/DolorNoControlado/PacienteDolor.png",
+                        ),
                       ),
                     ],
                   ),

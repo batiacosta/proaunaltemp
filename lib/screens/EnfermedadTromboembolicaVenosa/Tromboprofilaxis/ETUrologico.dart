@@ -17,6 +17,7 @@ import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ContraindicacionesMecanica.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/FactoresRiesgoSangrado.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/Tromboprofilaxis.dart';
 import 'package:acin/screens/mainMenu.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,13 @@ class _ETUrologicoState extends State<ETUrologico> {
     colorClaro = c.enfermedadTromboembolicaVenosaBackground;
     colorMedio = c.enfermedadTromboembolicaVenosaRojoCabecera;
 
-    return new Scaffold(
+    return new MaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+        "/MainMenu":(BuildContext context)=>MainMenu(),
+          "/Tromboprofilaxis":(BuildContext context)=>Tromboprofilaxis(),
+        },
+        home: Scaffold(
         drawer: MenuDesplegado(),
         appBar: BarraSuperior().Barra(context, false),
         bottomNavigationBar: BarraInferior(),
@@ -51,6 +58,7 @@ class _ETUrologicoState extends State<ETUrologico> {
         resizeToAvoidBottomInset: false,
         body: SafeArea(
           child: cuerpo(context),
+        )
         )
     );
   }
@@ -78,7 +86,7 @@ class _ETUrologicoState extends State<ETUrologico> {
             width: double.infinity,
             margin: s.margenNormal(context),
             child: Container(
-              padding: s.margenNormalEspaciadd(context),
+              padding: s.margenNormalEspaciado(context),
               decoration: BoxDecoration(
                 color: c.white,
                 borderRadius: BorderRadius.all(Radius.circular(s.radiousValue))
@@ -222,7 +230,7 @@ class _ETUrologicoState extends State<ETUrologico> {
                   child: Column(
                     children: [
                       Container(
-                        padding: s.margenNormalEspaciadd(context),
+                        padding: s.margenNormalEspaciado(context),
                         width: double.infinity,
                         decoration: BoxDecoration(
                             color: c.tromboprofilaxisAzulrey,
@@ -236,7 +244,7 @@ class _ETUrologicoState extends State<ETUrologico> {
                       ),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'No ortopédico',
@@ -253,7 +261,7 @@ class _ETUrologicoState extends State<ETUrologico> {
                       DividerGeneral(color: c.tromboprofilaxisAzulrey),
                       InkWell(
                         child: Container(
-                          padding: s.margenNormalEspaciadd(context),
+                          padding: s.margenNormalEspaciado(context),
                           width: double.infinity,
                           child: Text(
                             'Ortopédico',

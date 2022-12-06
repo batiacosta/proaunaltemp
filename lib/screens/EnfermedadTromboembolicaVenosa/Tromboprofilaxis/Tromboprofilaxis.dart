@@ -12,6 +12,21 @@ import 'package:acin/ReusableWidgets/headers.dart';
 import 'package:acin/ReusableWidgets/manipularImagen.dart';
 import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/ReusableWidgets/volver.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/EnfermedadTromboembolicaVenosa.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/CalculadoraCaprini.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETAbdominopelvico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCardiovascular.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETCirugiaPlastica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETNeurologica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObesidad.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETObstetricia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOrtopedia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETOtorrinolaringologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETToracica.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETTraumatologia.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETUrologico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/ETVascularPeriferico.dart';
+import 'package:acin/screens/EnfermedadTromboembolicaVenosa/Tromboprofilaxis/FactoresRiesgoSangrado.dart';
 import 'package:acin/screens/mainMenu.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +49,28 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
   Widget build(BuildContext context) {
     colorClaro = c.enfermedadTromboembolicaVenosaBackground;
     colorMedio = c.enfermedadTromboembolicaVenosaRojoCabecera;
-    return new Scaffold(
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+          "/MainMenu":(BuildContext context)=>MainMenu(),
+          "/Tromboprofilaxis":(BuildContext context)=>Tromboprofilaxis(),
+          "/EnfermedadTromboembolicaVenosa":(BuildContext context)=>EnfermedadTromboembolicaVenosa(),
+          "/ETAbdominopelvico":(BuildContext context)=>ETAbdominopelvico(),
+          "/ETObesidad":(BuildContext context)=>ETObesidad(),
+          "/ETUrologico":(BuildContext context)=>ETUrologico(),
+          "/ETCirugiaPlastica":(BuildContext context)=>ETCirugiaPlastica(),
+          "/ETOtorrinolaringologia":(BuildContext context)=>ETOtorrinolaringologia(),
+          "/ETCardiovascular":(BuildContext context)=>ETCardiovascular(),
+          "/ETVascularPeriferico":(BuildContext context)=>ETVascularPeriferico(),
+          "/ETToracica":(BuildContext context)=>ETToracica(),
+          "/ETObstetricia":(BuildContext context)=>ETObstetricia(),
+          "/ETNeurologica":(BuildContext context)=>ETNeurologica(),
+          "/ETOrtopedia":(BuildContext context)=>ETOrtopedia(),
+          "/ETTraumatologia":(BuildContext context)=>ETTraumatologia(),
+          "/FactoresRiesgoSangrado":(BuildContext context)=>FactoresRiesgoSangrado(),
+          "/CalculadoraCaprini":(BuildContext context)=>CalculadoraCaprini(),
+        },
+        home: Scaffold(
         drawer: MenuDesplegado(),
         appBar: BarraSuperior().Barra(context, false),
         bottomNavigationBar: BarraInferior(),
@@ -42,6 +78,7 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
         resizeToAvoidBottomInset: false,
         body: SafeArea(
           child: cuerpo(context),
+        )
         )
     );
   }
@@ -70,7 +107,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'ABDOMINOPÉLVICO/GINECOLÓGICO',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETAbdominopelvico')
+                  onTap: ()=> Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ETAbdominopelvico()),
+                  )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -79,7 +119,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'OBESIDAD',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETObesidad')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETObesidad()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -88,7 +131,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'UROLÓGICO',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETUrologico')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETUrologico()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -97,7 +143,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'CIRUGÍA PLÁSTICA Y RECONSTRUCTIVA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETCirugiaPlastica')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETCirugiaPlastica()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -106,7 +155,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'OTORRINOLARINGOLOGÍA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETOtorrinolaringologia')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETOtorrinolaringologia()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -115,7 +167,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'CARDIOVASCULAR',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETCardiovascular')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETCardiovascular()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -124,7 +179,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'VASCULAR PERIFÉRICO',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETVascularPeriferico')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETVascularPeriferico()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -133,7 +191,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'TORÁCICA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETToracica')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETToracica()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -142,7 +203,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'OBSTETRICIA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETObstetricia')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETObstetricia()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -151,7 +215,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'NEUROLÓGICA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETNeurologica')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETNeurologica()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -160,7 +227,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'ORTOPEDIA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETOrtopedia')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETOrtopedia()),
+                    )
                 ),
                 s.espacioPequeno(),
                 InkWell(
@@ -169,7 +239,10 @@ class _TromboprofilaxisState extends State<Tromboprofilaxis> {
                     text: 'TRAUMATOLOGÍA',
                     colorText: c.tromboprofilaxisGris,
                   ),
-                  onTap: ()=> Navigator.pushNamed(context, '/ETTraumatologia')
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ETTraumatologia()),
+                    )
                 ),
                 s.espacioPequeno(),
 

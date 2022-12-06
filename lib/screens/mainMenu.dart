@@ -4,7 +4,8 @@ import 'package:acin/ReusableWidgets/menu_hamburguesa.dart';
 import 'package:acin/screens/EnfermedadTromboembolicaVenosa/EnfermedadTromboembolicaVenosa.dart';
 import 'package:acin/screens/InfeccionIntraabdominal/infeccion_intraabdominal_menu.dart';
 import 'package:acin/screens/InfeccionPielTejidosBlandos/tejidos_menu.dart';
-import 'package:acin/screens/InfeccionTractoUrinario/infeccion_tractu_urinario_menu.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioMenu.dart';
+import 'package:acin/screens/InfeccionTractoUrinario/InfeccionTractoUrinarioNoComplicada/infeccion_tractu_urinario_menu.dart';
 import 'package:acin/screens/ManejoDolorPosoperatorio/MenejoDolorPosoperatorio.dart';
 import 'package:acin/screens/NeumoniaAdquiridaEnComunidad/neumonia_adquirida_en_comunidad.dart';
 import 'package:acin/screens/ProfilaxisQuirurgica/profilaxis_quirurgica_menu.dart';
@@ -79,7 +80,7 @@ class _MainMenuState extends State<MainMenu> {
                 onPressed: (){
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => InfeccionTractoUrinarioMenu()),
+                    MaterialPageRoute(builder: (context) => InfeccionTractoUrinario()),
                   );
                 },
               ),

@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 class GeneralSettings{
 
+  String chulo = "✓";
+  String triangulito = "➢";
+  String rombo = "❖";
+  String punto = "•";
+  String guion = "-";
+
   double radiousValue = 10;
   margenNormal(context){
     return EdgeInsets.only(
@@ -14,7 +20,7 @@ class GeneralSettings{
         left: MediaQuery.of(context).size.width*0.03
     );
   }
-  margenNormalEspaciadd(context){
+  margenNormalEspaciado(context){
     return EdgeInsets.only(
         right: MediaQuery.of(context).size.width*0.08,
         left: MediaQuery.of(context).size.width*0.08,
@@ -54,7 +60,7 @@ class GeneralSettings{
   );
   TextStyle regular(context, Color color) => TextStyle(
       fontFamily: 'Ancizar',
-      fontSize: MediaQuery.of(context).size.width * 0.05,
+      fontSize: MediaQuery.of(context).size.width * 0.048,
       color: color,
   );
   TextStyle regularBold(context, Color color) => TextStyle(

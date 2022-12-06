@@ -91,7 +91,10 @@ flutter:
     - assets/m3.png
     - assets/m4.png
     - assets/m5.png
+    - assets/m6.png
     - assets/m7.png
+    - assets/NoComplicadaM.png
+    - assets/ComplicadaM.png
     - assets/EncabezadoMenu.png
     - assets/logoApp.png
     - assets/b1.png
@@ -144,6 +147,10 @@ flutter:
     - assets/InfeccionTractoUrinario/tractoUrinario_b2.png
     - assets/InfeccionTractoUrinario/urinarioTabla1.png
     - assets/InfeccionTractoUrinario/urinarioTabla2.png
+    - assets/InfeccionTractoUrinario/InfeccionComplicada.png
+    - assets/InfeccionTractoUrinario/InfeccionNoComplicada.png
+    - assets/InfeccionTractoUrinario/CistitisComplicadaTabla.png
+    - assets/InfeccionTractoUrinario/PielonefritisComplicadaTabla.png
 
     - assets/InfeccionPielTejidosBlandos/tejidosTitulo.png
     - assets/InfeccionPielTejidosBlandos/tejidos_b1.png
@@ -180,6 +187,7 @@ flutter:
     - assets/MenejoDolorPosoperatorio/dSevero1.png
     - assets/MenejoDolorPosoperatorio/dSevero2.png
     - assets/MenejoDolorPosoperatorio/dolorNoControlado.png
+    - assets/MenejoDolorPosoperatorio/dolorNoControladoT.png
     - assets/MenejoDolorPosoperatorio/enfoqueSistematico.png
     - assets/MenejoDolorPosoperatorio/DolorLeve/Paso1.png
     - assets/MenejoDolorPosoperatorio/DolorModerado/Paso1.png

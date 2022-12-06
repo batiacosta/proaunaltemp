@@ -16,7 +16,7 @@ class RoundedContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: s.margenNormalEspaciadd(context),
+      padding: s.margenNormalEspaciado(context),
       width: double.infinity,
       decoration: BoxDecoration(
         color: color,

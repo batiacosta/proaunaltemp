@@ -31,7 +31,7 @@ class _CapriniState extends State<Caprini> {
           children: [
             InkWell(
                 child: Container(
-                  padding: s.margenNormalEspaciadd(context),
+                  padding: s.margenNormalEspaciado(context),
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: c.tromboprofilaxisAzulClaroIntenso,

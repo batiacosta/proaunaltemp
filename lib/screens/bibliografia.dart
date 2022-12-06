@@ -168,15 +168,32 @@ class _BibliografiaState extends State<Bibliografia> {
         ),
         bibliografiaContent(
             context,
-            'Global guidelines for the prevention of surgical site infection, second edition. Geneva: World Health Organization. 2018.\n'
+            'Álvarez-Moreno CA, Reyes P, Remolina SA, Nocua-Báez LC, Valderrama MC, Guevara OA, et al. Guía de práctica clínica para la Profilaxis quirúrgica antimicrobiana. Infectio 2022; 26(3): 238-249.\n'
         ),
         bibliografiaContent(
             context,
-            'Berríos-Torres SI, Umscheid CA, Bratzler DW, Leas B, Stone EC, Kelz RR, Reinke CE, et al; Healthcare Infection Control Practices Advisory Committee. Centers for Disease Control and Prevention Guideline for the Prevention of Surgical Site Infection, 2017. JAMA Surg. 2017;152(8):784-791.\n'
+            'National institute for Health and Care Excellence. Urinary tract infection (catheter- associated): antimicrobial prescribing NG113. 2018. Available: https://www.nice.org.uk/guidance/ng113.\n'
         ),
         bibliografiaContent(
             context,
-            'Brocard E, Reveiz L, Régnaux JP, Abdala V, Ramón-Pardo P, Del Rio Bueno A. Antibiotic prophylaxis for surgical procedures: a scoping review. Rev Panam Salud Publica. 2021 May 26;45:e62\n'
+            'National institute for Health and Care Excellence. Urinary tract infection (lower): antimicrobial prescribing NG109. 2018 Available: https://www.nice.org.uk/guidance/ng109\n'
+        ),
+        bibliografiaContent(
+            context,
+            'National institute for Health and Care Excellence. Pyelonephritis (acute): antimicrobial prescribing NG111. 2018 Available: https://www.nice.org.uk/guidance/ng111\n'
+        ),
+        bibliografiaContent(
+            context,
+            'Abella P, Gómez MP, Ruta para el manejo del dolor agudo en: Abella P, Manual de rutas clínicas de dolor, 2. edición, Secretaría Distrital de Salud de Bogotá, 2019, pp.20 -60.\n'
+        ),bibliografiaContent(
+            context,
+            'Chou R, Gordon DB, de Leon-Casasola OA, Rosenberg JM, Bickler S, Brennan T, CarterT, Cassidy CL, Chi􏰀enden EH, Degenhardt E, Griffith S, Manworren R, McCarberg BM, ontgomery R, Murphy J, Perkal MF, Suresh S, Sluka K, Strassels S, Thirlby R, ViscuEsi, Walco GA, Warner L, Weisman SJ, Wu CL. Management of postoperative pain: a clinical practice guideline from the A merican Pain S ociety, the American Society of RegionalAnesthesia and Pain Medicine, and the American Society of Anesthesiologists’ Commi􏰀eeon Regional Anesthesia, Executive Commi􏰀ee, and Administrative Council. J Pain 2016;17(2):131–57.Chou R, Gordon DB, de Leon-Casasola OA, Rosenberg JM, Bickler S, Brennan T, CarterT, Cassidy CL, Chi􏰀enden EH, Degenhardt E, Griffith S, Manworren R, McCarberg BM, ontgomery R, Murphy J, Perkal MF, Suresh S, Sluka K, Strassels S, Thirlby R, ViscuEsi, Walco GA, Warner L, Weisman SJ, Wu CL. Management of postoperative pain: a clinical practice guideline from the A merican Pain S ociety, the American Society of RegionalAnesthesia and Pain Medicine, and the American Society of Anesthesiologists’ Commi􏰀eeon Regional Anesthesia, Executive Commi􏰀ee, and Administrative Council. J Pain 2016;17(2):131–57.\n'
+        ),bibliografiaContent(
+            context,
+            'Bartlett MA, Mauck KF, Stephenson CR, Ganesh R, Daniels PR. Perioperative Venous Thromboembolism Prophylaxis. Mayo Clin Proc. 2020 Dec;95(12):2775-2798. doi: 10.1016/j.mayocp.2020.06.015. PMID: 33276846.\n'
+        ),bibliografiaContent(
+            context,
+            'Anderson, D. R., Morgano, G. P., Bennett, C., Dentali, F., Francis, C. W., Garcia, D. A., Kahn, S. R., Rahman, M., Rajasekhar, A., Rogers, F. B., Smythe, M. A., Tikkinen, K., Yates, A. J., Baldeh, T., Balduzzi, S., Brożek, J. L., Ikobaltzeta, I. E., Johal, H., Neumann, I., Wiercioch, W., … Dahm, P. (2019). American Society of Hematology 2019 guidelines for management of venous thromboembolism: prevention of venous thromboembolism in surgical hospitalized patients. Blood advances, 3(23), 3898–3944. doi: 10.1182/bloodadvances.2019000975.\n'
         ),
       ],
     );

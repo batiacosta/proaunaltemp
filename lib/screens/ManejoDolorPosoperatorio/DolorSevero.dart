@@ -57,7 +57,7 @@ class _DolorSeveroState extends State<DolorSevero> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -72,28 +72,14 @@ class _DolorSeveroState extends State<DolorSevero> {
                   child: Row(
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width*0.55,
-                        child: Column(
-                          children: [
-                            Image.asset("assets/MenejoDolorPosoperatorio/dSevero1.png"),
-                            Image.asset("assets/MenejoDolorPosoperatorio/dSevero2.png"),
-                          ],
-                        ),
+                        width: MediaQuery.of(context).size.width*0.7,
+                        child: Image.asset("assets/MenejoDolorPosoperatorio/dSevero1.png")
                       ),
-                      Container(
-                        width: MediaQuery.of(context).size.width*0.2,
-                        child: Column(
-                          children: [
-                            Image.asset("assets/MenejoDolorPosoperatorio/8.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/9.png", height: 40),
-                            Image.asset("assets/MenejoDolorPosoperatorio/10.png", height: 40),
-                          ],
-                        ),
-                      ),
-                      Expanded(child:
+                      Expanded(child: Container()),
+                      Container(child:
                         InkWell(
-                          child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                          child: Image.asset("assets/ReferenciasBoton.png",width: MediaQuery.of(context).size.width*0.1,),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1Fgpp4pbmIvBDrauQy8xmuBf7TfHhndaQ/view?usp=share_link"),
                         ),
                       ),
                     ],
@@ -113,7 +99,7 @@ class _DolorSeveroState extends State<DolorSevero> {
                   margin: s.margenNormal(context),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "Paso 1, 2 y 3",
+                    "Paso 1 + 2 + 3",
                     textAlign: TextAlign.left,
                     style: s.h1Regular(context, c.black),
                   ),

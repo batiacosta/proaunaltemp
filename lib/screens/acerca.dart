@@ -72,7 +72,7 @@ class AcercaDe extends StatelessWidget {
                         text: "Jorge Alberto Cortés Luna\n",
                         style: _estiloLetra1Bold(context)
                     ),TextSpan(
-                        text: "Médico especialista en Medicina interna e Infectologia - Infectólogo del Hospital Universitario Nacional y Profesor Titular de la Facultad de Medicina, Universidad Nacional de Colombia.\n\n",
+                        text: "Médico especialista en Medicina interna e Infectologia MSc - Infectólogo del Hospital Universitario Nacional y Profesor Titular de la Facultad de Medicina, Universidad Nacional de Colombia.\n\n",
                         style: _estiloLetra1(context)
                     ),TextSpan(
                         text: "Carlos Arturo Álvarez Moreno\n",
@@ -84,7 +84,7 @@ class AcercaDe extends StatelessWidget {
                         text: "Martha Carolina Valderrama Rios\n",
                         style: _estiloLetra1Bold(context)
                     ),TextSpan(
-                        text: "Médico Universidad Militar Nueva Granada, MSc (c) Epidemiología Clínica Universidad Nacional de Colombia.\n\n",
+                        text: "Médico Universidad Militar Nueva Granada, MSc en Epidemiología Clínica Universidad Nacional de Colombia.\n\n",
                         style: _estiloLetra1(context)
                     ),
 
@@ -92,7 +92,15 @@ class AcercaDe extends StatelessWidget {
                         text: "Jairo Alberto Morantes Caballero\n",
                         style: _estiloLetra1Bold(context)
                     ),TextSpan(
-                        text: "Especialista Medicina Interna Universidad Nacional, Epidemiología- Universidad del Rosario, Director de Clínicas Médicas HUN, Director de Prestación de Servicios hospitalarios y ambulatorios HUN, Docente Medicina Interna Universidad Nacional\n\n",
+                        text: "Médido especialista Medicina interna Universidad Nacional, Epidemiología- Universidad del Rosario, Director de Clínicas Médicas HUN, Director de Prestación de Servicios hospitalarios y ambulatorios HUN, Docente Medicina Interna Universidad Nacional.\n\n",
+                        style: _estiloLetra1(context)
+                    ),
+
+                    TextSpan(
+                        text: "María Patricia Gómez\n",
+                        style: _estiloLetra1Bold(context)
+                    ),TextSpan(
+                        text: "Médico especialista en Anestesiología y reanimación, Dolor y cuidados paliativos. Anestesióloga del Hospital Universitario Nacional. Docente de la Facultad de Medicina, Universidad Nacional de Colombia.\n\n",
                         style: _estiloLetra1(context)
                     ),
 

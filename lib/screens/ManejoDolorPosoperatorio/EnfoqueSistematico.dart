@@ -24,6 +24,10 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
   Color colorClaro;
   Color colorMedio;
 
+  /*
+  analgesia multimodal
+   */
+
   @override
   Widget build(BuildContext context) {
     colorClaro = c.dolorPosoperatorioBackground;
@@ -58,7 +62,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
       child: ListView(
         children: [
 
-          Headers(colorMedio, "Majeno del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
+          Headers(colorMedio, "Manejo del dolor Posoperatorio", "assets/MenejoDolorPosoperatorio/ManejoPosoperatorioTitulo.png"),
 
           Container(
             child: Column(
@@ -75,18 +79,18 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                       Container(
                         child: InkWell(
                           child: Image.asset("assets/ReferenciasBoton.png",height: 40),
-                          onTap: ()=>_goToURL("https://drive.google.com/drive/folders/1Yp-GJekvre3fCN4Mf_Z0Fmnvix945mVd?usp=sharing"),
+                          onTap: ()=>_goToURL("https://drive.google.com/file/d/1Fgpp4pbmIvBDrauQy8xmuBf7TfHhndaQ/view?usp=share_link"),
                         ),
                       )
                     ],
                   ),
                 ),
                 s.espacio(),
+                //Cambiar título por analgesia multimodal
                 Container(
-                  margin: s.margenDerecho(context),
                   child: Image.asset("assets/MenejoDolorPosoperatorio/enfoqueSistematico.png"),
                 ),
-                s.espacio(),
+                s.espacio(),s.espacio(),s.espacio(),
                 Container(
                   width: MediaQuery.of(context).size.width,
                   margin: s.margenNormal(context),
@@ -100,7 +104,9 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                             child: Text("• ", style: s.regular(context, c.black),),
                           ),
                           Expanded(
-                            child: Text("Registrar en HOSVITAL y en las notas de evolución la escala numérica (ej: 5/10).",
+                            child: Text("Registrar en HOSVITAL y en las notas "
+                                "de evolución clínica la escala numérica de "
+                                "intensidad del dolor (ej: 5/10).",
                               style: s.regular(context, c.black),textAlign: TextAlign.justify,),
                           )
                         ],
@@ -113,7 +119,8 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                             child: Text("• ", style: s.regular(context, c.black),),
                           ),
                           Expanded(
-                            child: Text("Cuando utilice Diclofenaco IV mantenga un adecuado estado de hidratación.", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
+                            child: Text("Cuando utilice Diclofenaco IV mantenga "
+                                "un adecuado estado de hidratación.", style: s.regular(context, c.black),textAlign: TextAlign.justify,),
                           )
                         ],
                       ),
@@ -125,7 +132,22 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                             child: Text("• ", style: s.regular(context, c.black),),
                           ),
                           Expanded(
-                            child: Text("Utilice acetaminofén si tolera VO. El Acetaminofén IV sólo esta indicado cuando no hay tolerancia a la vía oral.", style: s.regular(context, c.black), textAlign: TextAlign.justify,),
+                            child: Text("Utilice acetaminofén oral si tolera la vía oral. "
+                              , style: s.regular(context, c.black), textAlign: TextAlign.justify,),
+                          )
+                        ],
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            width: 20,
+                            child: Text("• ", style: s.regular(context, c.black),),
+                          ),
+                          Expanded(
+                            child: Text(
+                                "El Acetaminofén IV sólo esta indicado cuando "
+                                "no hay tolerancia a la vía oral.", style: s.regular(context, c.black), textAlign: TextAlign.justify,),
                           )
                         ],
                       ),
@@ -133,7 +155,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                   ),
                 ),
 
-                s.espacio(),
+                s.espacio(),s.espacio(),
                 Container(
                   width: MediaQuery.of(context).size.width,
                   margin: s.margenNormal(context),
@@ -141,6 +163,8 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                 ),
                 s.espacio(),
                 s.espacio(),
+
+                //Poner en botón
                 Container(
                     margin: s.margenNormal(context),
                     width: MediaQuery.of(context).size.width,
@@ -153,11 +177,11 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                                 style: s.regular(context, c.black),
                               ),
                               TextSpan(
-                                text: "Opioides Potentes ",
+                                text: "Opioides Potentes, ",
                                 style: s.regularBold(context, c.dolorPosoperatorioAzulRey),
                               ),
                               TextSpan(
-                                text: "esté atento a efectos eventos adversos:",
+                                text: "use siempre analgesia multimodal y esté atento a efectos eventos adversos:",
                                 style: s.regular(context, c.black),
                               ),
                             ]
@@ -190,7 +214,7 @@ class _EnfoqueSistematicoState extends State<EnfoqueSistematico> {
                             child: Text("- ", style: s.regular(context, c.black),),
                           ),
                           Expanded(
-                            child: Text(" Depresión respiratoria", style: s.regular(context, c.black),),
+                            child: Text("Depresión respiratoria", style: s.regular(context, c.black),),
                           )
                         ],
                       ),
